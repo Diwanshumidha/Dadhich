@@ -14017,9 +14017,10 @@ textarea {
   -moz-border-radius: 100%;
   border-radius: 100%;
 }
-.icon-bx-sm i {
-  font-size: 30px;
+.icon-bx-sm * {
+  font-size: 40px;
   vertical-align: middle;
+  color: #DCDCDC;
 }
 .icon-bx-sm img {
   vertical-align: middle;

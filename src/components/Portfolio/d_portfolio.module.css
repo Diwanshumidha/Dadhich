@@ -1,0 +1,68 @@
+.d_portfolio {
+  min-height: 100dvh;
+}
+
+.d_portfolio > .d_heading {
+  width: 100%;
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.d_heading > span {
+  max-width: 60%;
+  text-align: center;
+}
+
+.filter_button {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.filter_button > button {
+  padding: 0.2rem 1rem;
+  outline: none;
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 0.3rem;
+  font-size: 1.1rem;
+  transition: all 0.5s ease;
+}
+.filter_button > button:hover {
+  letter-spacing: 3px;
+  background-image: linear-gradient(to right, #ef146e 0, #fea958 100%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(255, 148, 81) 0px 7px 29px 0px;
+}
+
+.filter_button > button:active {
+  letter-spacing: 3px;
+  background-image: linear-gradient(to right, #ef146e 0, #fea958 100%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(255, 148, 81) 0px 7px 29px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.card_container {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.2rem;
+  /* background-color: blueviolet; */
+}
+.portfolio {
+  background-color: rgba(230, 230, 230, 0.3);
+  width: 100%;
+}
+.card_container > * {
+  margin-bottom: 3rem;
+}
