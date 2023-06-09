@@ -40,11 +40,11 @@ function Footer() {
 								<div className="widget widget_services style-1">
 									<h5 className="footer-title">Our links</h5>
 									<ul>
-										<li><Link href="#"><a>Home</a></Link></li>
-										<li><Link href="/about"><a>About Us</a></Link></li>
-										<li><Link href="/service"><a>Services</a></Link></li>
-										<li><Link href="/ContactUs"><a>Contact Us</a></Link></li>
-										<li><Link href="/blog"><a>Blog</a></Link></li>
+										<li><Link to="#"><a>Home</a></Link></li>
+										<li><Link to="/about"><a>About Us</a></Link></li>
+										<li><Link to="/service"><a>Services</a></Link></li>
+										<li><Link to="/ContactUs"><a>Contact Us</a></Link></li>
+										<li><Link to="/blog"><a>Blog</a></Link></li>
 									</ul>
 								</div>
 							</div>
@@ -64,11 +64,11 @@ function Footer() {
 								<div className="widget widget_services style-1">
 									<h5 className="footer-title">Other links</h5>
 									<ul>
-										<li><Link href="#"><a>FAQ</a></Link></li>
-										<li><Link href="/port"><a>Portfolio</a></Link></li>
-										<li><Link href="/Privacy"><a>Privacy Policy</a></Link></li>
-										<li><Link href="/Term"><a>Terms & Conditions</a></Link></li>
-										<li><Link href="/ecom"><a>E-Commerce</a></Link></li>
+										<li><Link to="#"><a>FAQ</a></Link></li>
+										<li><Link to="/Portfolio"><a>Portfolio</a></Link></li>
+										<li><Link to="/Privacy"><a>Privacy Policy</a></Link></li>
+										<li><Link to="/Term"><a>Terms & Conditions</a></Link></li>
+										<li><Link to="/Ecom"><a>E-Commerce</a></Link></li>
 									</ul>
 								</div>
 							</div>

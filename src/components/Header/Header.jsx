@@ -133,12 +133,12 @@ function Header() {
                     </ul>
                   </li>
                   <li>
-                    <Link to="/port">
+                    <Link to="/Portfolio">
                       <a>Portfolio</a>
                     </Link>
                   </li>
                   <li>
-                    <Link to="/contact">
+                    <Link to="/ContactUs">
                       <a>Contact Us</a>
                     </Link>
                   </li>

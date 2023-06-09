@@ -1,8 +1,7 @@
 import React from "react";
-import s from "./css/Portfolio.module.css";
-import Card from "./Card/Card";
-
-
+import s from "../Coupon/css/Portfolio.module.css";
+import Header from "../Header/Header";
+import Card from "../Coupon/Card/Card";
 const buttons = [
   "All Product",
   "Wordpress",
@@ -17,16 +16,16 @@ const buttons = [
   "Html"
 ];
 
-const CouponPortfolio = ({ hidden }) => {
+const DuplicatePort = ({ hidden }) => {
   hidden ? hidden : hidden = false
   return (
     <>
-      {/* <Header3 /> */}
+      <Header/>
     
       <div className={s.d_portfolio}>
         <div className={s.d_heading}>
           {/* <span>Our Creative Work</span> */}
-          <h1 className={s.yes}></h1>
+          {/* <h1 className={p.yes}>Portfolio</h1> */}
           {/* <span>
           Now, We show you our some latest and finest projects of our company.
           These all peerless projects boom in online marketing with highly rated
@@ -44,14 +43,14 @@ const CouponPortfolio = ({ hidden }) => {
           }
           <div className={s.portfolio}>
             <div className={`${s.card_container}`}>
-              <Card/>
-              <Card/>
-              <Card/>
-              <Card/>
-              <Card/>
-              <Card/>
-              <Card/>
-              <Card/>
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
               {/* <Link href="/about"><a><Card/></a></Link> */}
 
             </div>
@@ -63,4 +62,4 @@ const CouponPortfolio = ({ hidden }) => {
   );
 };
 
-export default CouponPortfolio;
+export default DuplicatePort;

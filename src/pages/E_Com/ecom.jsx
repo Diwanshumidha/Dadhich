@@ -7,10 +7,10 @@ import Process from "../../components/Process/Process";
 import GetInTouch3 from "../../components/GetInTouch/get-in-touch";
 import OurFeatures from "../OurFeatures/OurFeatures";
 import EUserFeature from "./EcomUserFeatures";
-import EComPortfolio from "../../components/Portfolio/EComPortfolio";
 import Footer from "../../components/Footer/Footer";
 import FaqEcom from "./FaqEcom";
 import GetInTouch from "../GetInTouch";
+import EComPortfolio from "./EComPortfolio";
 
 const E_Com = () => {
   return (
@@ -56,12 +56,7 @@ const E_Com = () => {
 
       <EComPortfolio hidden={true} category='ecom'/>
       {/* <EUserFeature hidden={true} category='ecom'/> */}
-      {/* <Process/> */}
-      {/* <D_Features/> */}
-      {/* <FAQ3/> */}
-      {/* <GetInTouch3 /> */}
       
-      {/* <Footer3/> */}
       <FaqEcom/>
       <GetInTouch/>
       <Footer/>

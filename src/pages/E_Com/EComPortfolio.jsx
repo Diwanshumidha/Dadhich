@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import s from "./d_portfolio.module.css";
-import Card from "./Card";
+// import Card from "./Card";
+// import s from "./card.module.css";
+import Card from "../../components/Coupon/Card/Card";
 import axios from "axios";
 
 

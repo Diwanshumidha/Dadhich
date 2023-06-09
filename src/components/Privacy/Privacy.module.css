@@ -1,0 +1,15 @@
+.heading{
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    margin: auto 20px;
+}
+.head{
+    /* display: inline; */
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    color: #1f2471;
+    font-size: 0.875rem;
+}
