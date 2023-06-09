@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel } from 'react-responsive';
+// import { Carousel } from 'react-responsive';
 import s from "../Coupon/css/CouponFeatures.module.css";
 import img_logo from "../../../public/svg/svgexport-12.svg";
 import { useState } from "react";
@@ -296,9 +296,9 @@ const Card = ({ name, ids }) => {
   return (
     <div className={`${s.card} ${ids}`} id={ids}>
       {/* <Image src={img_logo} width={60} height={60}></Image> */}
-      <Carousel>
+      {/* <Carousel> */}
         <img src={img_logo} alt="Image logo" width={60} height={60} />
-      </Carousel>
+      {/* </Carousel> */}
       <h4>{name}</h4>
     </div>
   );

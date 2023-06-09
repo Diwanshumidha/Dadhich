@@ -6,6 +6,8 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import { Link } from "react-router-dom";
 import DuplicatePort from "./DatingPort";
+import Development from "../Coupon/Development";
+import DatingFeatures from "./DatingFEatures";
 
 const Dating = () => {
   return (
@@ -53,6 +55,8 @@ const Dating = () => {
       {/* <DatingFeatures/> */}
       {/* <DatingFAQ/> */}
       <DuplicatePort/>
+      <Development/>
+      <DatingFeatures/>
       <GetInTouch/>
       
       <Footer/>

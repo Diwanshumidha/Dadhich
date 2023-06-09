@@ -8,6 +8,7 @@ import Development from "./Development";
 import CouponFeatures from "./CouponFeatures";
 import FaqCoupon from "./FapCoupon";
 import GetInTouch from "../../pages/GetInTouch";
+import Process from "../Process/Process";
 
 const CouponDeal = () => {
   return (
@@ -48,12 +49,13 @@ const CouponDeal = () => {
       </div>
       <OurFeatures/>
       <CouponPortfolio/>
-      {/* <Development/> */}
-      {/* <CouponFeatures/> */}
+      <Development/>
+      <CouponFeatures/>
       {/* <D_Portfolio hidden={true} category='ecom'></D_Portfolio> */}
       {/* <DuplicatePort/>
       <Process/>
   <FeaturesDuplicate/>*/}
+      {/* <Process/> */}
       <FaqCoupon/>
       <GetInTouch/> 
       <Footer/>

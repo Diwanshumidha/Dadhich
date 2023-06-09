@@ -45,12 +45,7 @@ const Card = ({name , count , imagelink ,cls}) =>{
         <div className={`${ s.process_card} ${cls} ` }  data-aos="zoom-in-down">
                 <div className={s.icon}>
                   <p>{count}</p>
-                  <Image
-                     src={imagelink}
-                    width={500}
-                    height={500}
-                    alt="Picture of the author"
-                    />
+                  <img src={imagelink} alt="Picture of the author" />
                   {/* <Image className={imagelink} src={'../../public/svg/svgexport-7.svg'} /> */}
                 </div>
                 <div className={s.content}>

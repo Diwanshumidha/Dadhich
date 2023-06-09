@@ -10,7 +10,7 @@ import img4 from '../../../public/svg/svgexport-10.svg';
 import img3 from '../../../public/svg/svgexport-9.svg';
 import img2 from '../../../public/svg/svgexport-8.svg';
 import img1 from '../../../public/svg/svgexport-7.svg';
-import { Carousel } from 'react-responsive';
+// import { Carousel } from 'react-responsive';
 
 const Process = () => {
   return (
@@ -40,9 +40,9 @@ const Card = ({ name, count, imagelink, cls }) => {
     <div className={`${s.process_card} ${cls}`} data-aos="zoom-in-down">
       <div className={s.icon}>
         <p>{count}</p>
-        <Carousel>
+        {/* <Carousel> */}
           <img src={imagelink} alt="Picture of the author" />
-        </Carousel>
+        {/* </Carousel> */}
       </div>
       <div className={s.content}>
         <h4>{name}</h4>
