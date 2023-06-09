@@ -56,7 +56,7 @@ const E_Com = () => {
 
       <EComPortfolio hidden={true} category='ecom'/>
       {/* <EUserFeature hidden={true} category='ecom'/> */}
-      
+      <Process/>
       <FaqEcom/>
       <GetInTouch/>
       <Footer/>

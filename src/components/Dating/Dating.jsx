@@ -8,6 +8,9 @@ import { Link } from "react-router-dom";
 import DuplicatePort from "./DatingPort";
 import Development from "../Coupon/Development";
 import DatingFeatures from "./DatingFEatures";
+import DatingFAQ from "./DatingFAQ";
+import FeaturesDuplicate from "./FeaturesDuplicate";
+import Process from "../Process/Process";
 
 const Dating = () => {
   return (
@@ -53,12 +56,14 @@ const Dating = () => {
       <Process/> */}
       {/* <FeaturesDuplicate/> */}
       {/* <DatingFeatures/> */}
-      {/* <DatingFAQ/> */}
+    
       <DuplicatePort/>
       <Development/>
       <DatingFeatures/>
+      <Process/>
+      <FeaturesDuplicate/>
+      <DatingFAQ/>
       <GetInTouch/>
-      
       <Footer/>
     </>
   );
