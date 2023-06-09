@@ -3,13 +3,14 @@ import React from "react";
 // import Link from "next/link";
 import {Link} from "react-router-dom";
 import Header from "../../components/Header/Header";
-import Features3 from "../../components/Features/OurFeatures-3";
-import D_Portfolio from "../../components/Portfolio/D_Portfolio";
 import Process from "../../components/Process/Process";
-import Footer3 from "../../layout/footer-3";
-import D_Features from "../../components/Features/D_Features/D_Features";
-import FAQ3 from "../../components/FAQ/Faq";
 import GetInTouch3 from "../../components/GetInTouch/get-in-touch";
+import OurFeatures from "../OurFeatures/OurFeatures";
+import EUserFeature from "./EcomUserFeatures";
+import EComPortfolio from "../../components/Portfolio/EComPortfolio";
+import Footer from "../../components/Footer/Footer";
+import FaqEcom from "./FaqEcom";
+import GetInTouch from "../GetInTouch";
 
 const E_Com = () => {
   return (
@@ -51,14 +52,19 @@ const E_Com = () => {
           </div>
         </div>
       </div>
-      <Features3 />
-      <D_Portfolio hidden={true} category='ecom'></D_Portfolio>
+      <OurFeatures/>
+
+      <EComPortfolio hidden={true} category='ecom'/>
+      {/* <EUserFeature hidden={true} category='ecom'/> */}
       {/* <Process/> */}
       {/* <D_Features/> */}
       {/* <FAQ3/> */}
       {/* <GetInTouch3 /> */}
       
       {/* <Footer3/> */}
+      <FaqEcom/>
+      <GetInTouch/>
+      <Footer/>
     </>
   );
 };

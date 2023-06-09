@@ -111,17 +111,17 @@ function Header() {
                     </a>
                     <ul className="sub-menu">
                       <li>
-                        <Link to="/services-3">
+                        <Link to="/Business">
                           <a>Business Web Development</a>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/ecom">
+                        <Link to="/Ecom">
                           <a>E-commerce Website</a>
                         </Link>
                       </li>
                       <li>
-                        <Link to="/ecomDuplicate">
+                        <Link to="/CouponDeal">
                           <a>Coupon & Deal Website</a>
                         </Link>
                       </li>

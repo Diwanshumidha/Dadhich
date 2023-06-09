@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-function Accordion_sm() {
+function AccordionEcom() {
     const [activeDefault, setActiveDefault] = useState(0);
     const defaultAccordion = [
         {
@@ -116,4 +116,4 @@ function Accordion_sm() {
   )
 }
 
-export default Accordion_sm;
+export default AccordionEcom;

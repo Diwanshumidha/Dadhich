@@ -1,10 +1,8 @@
-import Accordion_sm from "./accordion_sm";
-import Footer3 from "../../layout/footer-3";
-import Header3 from "../../layout/header-3";
-// import Link from 'next/link';
-import { Link } from "react-router-dom";
 
-function FAQ3() {
+import { Link } from "react-router-dom";
+import AccordionEcom from "./AccordianEcom";
+
+function FaqEcom() {
   return (
     <>
       {/* <Header3/> */}
@@ -36,11 +34,9 @@ function FAQ3() {
                 data-wow-duration="2s"
                 data-wow-delay="0.2s"
               >
-                <Accordion_sm />
+                <AccordionEcom/>
               </div>
-              {/* <div className="col-lg-6 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
-						<img src="images/about/img1.png" className="move-4" alt=""/>
-					</div> */}
+              
             </div>
           </div>
         </section>
@@ -50,4 +46,4 @@ function FAQ3() {
   );
 }
 
-export default FAQ3;
+export default FaqEcom;

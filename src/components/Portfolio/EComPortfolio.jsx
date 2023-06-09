@@ -4,7 +4,7 @@ import Card from "./Card";
 import axios from "axios";
 
 
-const D_Portfolio = ({ hidden , category='Ecom' }) => {
+const EComPortfolio = ({ hidden , category='Ecom' }) => {
   
   const [currentcategory , setcategory] = useState(category)
   const [portfolio, setportfolio] = useState([]);
@@ -78,5 +78,5 @@ const D_Portfolio = ({ hidden , category='Ecom' }) => {
   );
 };
 
-export default D_Portfolio;
+export default EComPortfolio;
 

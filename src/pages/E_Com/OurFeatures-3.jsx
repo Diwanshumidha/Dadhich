@@ -5,7 +5,7 @@ import { MdOutlineSupportAgent } from "react-icons/md";
 
 
 
-function Features3() {
+function OurFeatures() {
   return (
     <>
       {/* <!-- Our Fetures --> */}
@@ -128,4 +128,4 @@ function Features3() {
   );
 }
 
-export default Features3;
+export default OurFeatures;
