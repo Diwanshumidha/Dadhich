@@ -5,10 +5,11 @@ import CouponDeal from './components/Coupon/CouponDeal';
 import E_Com from './pages/E_Com/ecom';
 import Business from './components/Business/Business';
 import ContactUs from './pages/ContactUs';
-import Portfolio from './components/Portfolio/Portfolio';
+
 import Dating from './components/Dating/Dating';
 import Privacy from './components/Privacy/Privacy';
 import Term from './components/TermCondition/Term';
+import Portfolio from './pages/Portfolio/Portfolio';
 
 
 const App = () => {

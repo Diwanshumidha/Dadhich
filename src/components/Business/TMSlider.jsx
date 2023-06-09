@@ -1,23 +1,35 @@
 import Slider from "react-slick";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay} from 'swiper';
+import 'swiper/css';
+
 
 function TMSlider() {
-	const settings = {
-		dots: true,
-		infinite: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: true,
-		speed: 3500,
-		arrows: false,
-	};
+	// const settings = {
+	// 	dots: true,
+	// 	infinite: true,
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	autoplay: true,
+	// 	speed: 3500,
+	// 	arrows: false,
+	// };
 	return (
 		<>
-			<Slider
-				{...settings}
-				className="testimonials-carousel2 owl-carousel owl-theme owl-none owl-theme owl-dots-primary-full wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s"
-			>
-
-				<div className="item">
+			<Swiper
+				modules={[Autoplay]}
+				spaceBetween={50}
+				slidesPerView={1}
+				onSlideChange={() => console.log('slide change')}
+				scrollbar={{ draggable: true }}
+				autoplay={{
+					delay: 2500,
+					disableOnInteraction: false}}
+			
+				loop={true}
+				onSwiper={(swiper) => console.log(swiper)}
+				className="testimonials-carousel2 owl-carousel owl-theme owl-none owl-theme owl-dots-primary-full wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+				<SwiperSlide className="item">
 					<div className="testimonial-2">
 						<div className="testimonial-pic quote-right">
 							<img src="images/testimonials/JoshuaSophy.jpeg" alt="" />
@@ -29,8 +41,8 @@ function TMSlider() {
 							<strong className="testimonial-name white">Joshuasophy</strong>
 						</div>
 					</div>
-				</div>
-				<div className="item">
+				</SwiperSlide>
+				<SwiperSlide className="item">
 					<div className="testimonial-2">
 						<div className="testimonial-pic quote-right">
 							<img src="images/testimonials/FinCross.jpeg" alt="" />
@@ -40,8 +52,8 @@ function TMSlider() {
 							<strong className="testimonial-name white">Fincross777</strong>
 						</div>
 					</div>
-				</div>
-				<div className="item">
+				</SwiperSlide>
+				<SwiperSlide className="item">
 					<div className="testimonial-2">
 						<div className="testimonial-pic quote-right">
 							<img src="images/testimonials/McFarland.jpeg" alt="" />
@@ -53,8 +65,8 @@ function TMSlider() {
 							<strong className="testimonial-name white">Memberbiz</strong>
 						</div>
 					</div>
-				</div>
-				<div className="item">
+				</SwiperSlide>
+				<SwiperSlide className="item">
 					<div className="testimonial-2">
 						<div className="testimonial-pic quote-right">
 							<img src="images/testimonials/Kenyeben.jpeg" alt="" />
@@ -64,9 +76,9 @@ function TMSlider() {
 							<strong className="testimonial-name white">Kenyeben</strong>
 						</div>
 					</div>
-				</div>
+				</SwiperSlide>
 
-			</Slider>
+			</Swiper>
 		</>
 	);
 }

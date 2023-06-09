@@ -1,7 +1,6 @@
 
 
 
-import React from 'react';
 import s from './Process.module.css';
 import img7 from '../../../public/svg/svgexport-13.svg';
 import img6 from '../../../public/svg/svgexport-12.svg';
