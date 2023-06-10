@@ -9,6 +9,7 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Dating from './components/Dating/Dating';
 import Privacy from './components/Privacy/Privacy';
 import Term from './components/TermCondition/Term';
+import Email from './pages/Email';
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
       <Route path='/Dating' element={<Dating/>} />
       <Route path='/Privacy' element={<Privacy/>} />
       <Route path='/Term' element={<Term/>} />
+      <Route path='/Email' element={<Email/>} />
     </Routes>
   )
 }

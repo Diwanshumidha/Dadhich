@@ -238,9 +238,9 @@ const Card = ({ name, ids }) => {
   return (
     <div className={`${s.card} ${ids}`} id={ids} >
       {/* <Image src={img_logo} width={60} height={60}></Image> */}
-      <Carousel>
+      {/* <Carousel> */}
           <img rc={img_logo} width={60} height={60} alt="Image logo" />
-        </Carousel>
+        {/* </Carousel> */}
       <h4>{name}</h4>
     </div>
   );

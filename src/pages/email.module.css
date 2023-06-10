@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    /* width: 300px; */
+    /* justify-content: center; */
+}
+.header>input{
+    margin: 0px 400px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.header>lable{
+    font-size: 20px;
+}
+.header>textarea{
+    margin: 0px 400px;
+    border-radius: 5px;
+}
+.header>button{
+    margin: 0px 400px;
+    font-size: 20px;
+    border-radius: 5px;
+
+}

@@ -1,10 +1,7 @@
 import React from "react";
-// import Header3 from "../layout/header-3";
-// import Link from "next/link";
 import {Link} from "react-router-dom";
 import Header from "../../components/Header/Header";
 import Process from "../../components/Process/Process";
-import GetInTouch3 from "../../components/GetInTouch/get-in-touch";
 import OurFeatures from "../OurFeatures/OurFeatures";
 import EUserFeature from "./EcomUserFeatures";
 import Footer from "../../components/Footer/Footer";
@@ -56,7 +53,8 @@ const E_Com = () => {
 
       <EComPortfolio hidden={true} category='ecom'/>
       {/* <EUserFeature hidden={true} category='ecom'/> */}
-      
+      <Process/>
+      <EUserFeature/>
       <FaqEcom/>
       <GetInTouch/>
       <Footer/>
