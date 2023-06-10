@@ -20739,12 +20739,12 @@ icon-bx-wraper style-4:hover .icon-cell i,
 .breadcrumb-row ul li a {
   color: #fff;
 }
-.breadcrumb-row ul .breadcrumb-item + .breadcrumb-item::before {
+/* .breadcrumb-row ul .breadcrumb-item + .breadcrumb-item::before {
   content: "\f054";
   color: #fff;
   font-family: fontawesome;
   font-size: 14px;
-}
+} */
 .breadcrumb-row.style-1 .breadcrumb {
   background-image: var(--gradient);
   background-size: 200%;
@@ -21004,15 +21004,15 @@ footer .widget_services ul li a:hover {
 footer .widget_services.style-1 ul li a {
   padding: 5px 0 5px 15px;
 }
-footer .widget_services.style-1 ul li a:before {
-  content: "\f105";
+/* footer .widget_services.style-1 ul li a:before {
+  content: "\f015 ";
   font-family: fontawesome;
   left: 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   color: #fff !important;
-}
+} */
 footer .widget_getintuch ul li {
   position: relative;
   padding: 8px 0;

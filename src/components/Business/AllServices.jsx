@@ -6,6 +6,7 @@ import { SiOnlyoffice } from "react-icons/si";
 import { GiReceiveMoney } from "react-icons/gi";
 import { VscGraphLine } from "react-icons/vsc";
 import { IoHelp } from "react-icons/io5";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 
 
@@ -44,7 +45,7 @@ function Allservices() {
                   </p>
                   <Link href="/services-3">
                     <a className="btn btn-outline-primary">
-                      <i className="fa fa-angle-right"></i>
+                      <MdKeyboardArrowRight/>
                     </a>
                   </Link>
                 </div>
@@ -77,7 +78,9 @@ function Allservices() {
                   </p>
                   <Link href="/services-3">
                     <a className="btn btn-outline-primary">
-                      <i className="fa fa-angle-right"></i>
+                      <i className="fa fa-angle-right">
+                      <MdKeyboardArrowRight/>
+                      </i>
                     </a>
                   </Link>
                 </div>
@@ -110,7 +113,9 @@ function Allservices() {
                   </p>
                   <Link href="/services-3">
                     <a className="btn btn-outline-primary">
-                      <i className="fa fa-angle-right"></i>
+                      <i className="fa fa-angle-right">
+                      <MdKeyboardArrowRight/>
+                      </i>
                     </a>
                   </Link>
                 </div>
@@ -143,7 +148,9 @@ function Allservices() {
                   </p>
                   <Link href="/services-3">
                     <a className="btn btn-outline-primary">
-                      <i className="fa fa-angle-right"></i>
+                      <i className="fa fa-angle-right">
+                      <MdKeyboardArrowRight/>
+                      </i>
                     </a>
                   </Link>
                 </div>
@@ -176,7 +183,9 @@ function Allservices() {
                   </p>
                   <Link href="/services-3">
                     <a className="btn btn-outline-primary">
-                      <i className="fa fa-angle-right"></i>
+                      <i className="fa fa-angle-right">
+                      <MdKeyboardArrowRight/>
+                      </i>
                     </a>
                   </Link>
                 </div>
@@ -209,7 +218,9 @@ function Allservices() {
                   </p>
                   <Link href="/services-3">
                     <a className="btn btn-outline-primary">
-                      <i className="fa fa-angle-right"></i>
+                      <i className="fa fa-angle-right">
+                      <MdKeyboardArrowRight/>
+                      </i>
                     </a>
                   </Link>
                 </div>

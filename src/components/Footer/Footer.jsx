@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom";
+import {AiOutlineSwapRight ,AiFillMail } from 'react-icons/ai'
+import { ImLocation } from 'react-icons/im'
+import { BsTelephoneFill } from "react-icons/bs";
+
 
 function Footer() {
   return (
@@ -93,27 +97,42 @@ function Footer() {
                   <ul>
                     <li>
                       <Link to="#">
-                        <a>Home</a>
+                        <div style={{display:'flex',alignItems:'baseline',gap:'5px'}}>
+                        <AiOutlineSwapRight/>
+                        <a style={{padding:'0px'}}>Home</a>
+                        </div>
                       </Link>
                     </li>
                     <li>
                       <Link to="/about">
-                        <a>About Us</a>
+                      <div style={{display:'flex',alignItems:'baseline',gap:'5px'}}>
+                        <AiOutlineSwapRight/>
+                        <a style={{padding:'0px'}}>About Us</a>
+                        </div>
                       </Link>
                     </li>
                     <li>
                       <Link to="/service">
-                        <a>Services</a>
+                      <div style={{display:'flex',alignItems:'baseline',gap:'5px'}}>
+                        <AiOutlineSwapRight/>
+                        <a style={{padding:'0px'}}>Services</a>
+                        </div>
                       </Link>
                     </li>
                     <li>
                       <Link to="/ContactUs">
-                        <a>Contact Us</a>
+                      <div style={{display:'flex',alignItems:'baseline',gap:'5px'}}>
+                        <AiOutlineSwapRight/>
+                        <a style={{padding:'0px'}}>Contact Us</a>
+                        </div>
                       </Link>
                     </li>
                     <li>
                       <Link to="/blog">
-                        <a>Blog</a>
+                        <div style={{display:'flex',alignItems:'baseline',gap:'5px'}}>
+                        <AiOutlineSwapRight/>
+                        <a style={{padding:'0px'}}>Blog</a>
+                        </div>
                       </Link>
                     </li>
                   </ul>
@@ -141,27 +160,42 @@ function Footer() {
                   <ul>
                     <li>
                       <Link to="#">
-                        <a>FAQ</a>
+                      <div style={{display:'flex',alignItems:'baseline',gap:'5px'}}>
+                        <AiOutlineSwapRight/>
+                        <a style={{padding:'0px'}}>Faq</a>
+                        </div>
                       </Link>
                     </li>
                     <li>
                       <Link to="/Portfolio">
-                        <a>Portfolio</a>
+                      <div style={{display:'flex',alignItems:'baseline',gap:'5px'}}>
+                        <AiOutlineSwapRight/>
+                        <a style={{padding:'0px'}}>Portfolio</a>
+                        </div>
                       </Link>
                     </li>
                     <li>
                       <Link to="/Privacy">
-                        <a>Privacy Policy</a>
+                      <div style={{display:'flex',alignItems:'baseline',gap:'5px'}}>
+                        <AiOutlineSwapRight/>
+                        <a style={{padding:'0px'}}>Privacy Policy</a>
+                        </div>
                       </Link>
                     </li>
                     <li>
                       <Link to="/Term">
-                        <a>Terms & Conditions</a>
+                      <div style={{display:'flex',alignItems:'baseline',gap:'5px'}}>
+                        <AiOutlineSwapRight/>
+                        <a style={{padding:'0px'}}>Terms & Condition</a>
+                        </div>
                       </Link>
                     </li>
                     <li>
                       <Link to="/Ecom">
-                        <a>E-Commerce</a>
+                      <div style={{display:'flex',alignItems:'baseline',gap:'5px'}}>
+                        <AiOutlineSwapRight/>
+                        <a style={{padding:'0px'}}>E-commerce</a>
+                        </div>
                       </Link>
                     </li>
                   </ul>
@@ -176,15 +210,21 @@ function Footer() {
                   <h5 className="footer-title">Contact Us</h5>
                   <ul>
                     <li>
-                      <i class="fa fa-phone gradient"></i>
+                      <i className="fa fa-phone gradient">
+                        <BsTelephoneFill/>
+                      </i>
                       <span>+91 8696219723</span>
                     </li>
                     <li>
-                      <i className="fa fa-envelope gradient"></i>
+                      <i className="fa fa-envelope gradient">
+                        <AiFillMail/>
+                      </i>
                       <span>Info@DadhichTechnologies.com</span>
                     </li>
                     <li>
-                      <i className="fa fa-map-marker gradient"></i>
+                      <i className="fa fa-map-marker gradient">
+                        <ImLocation/>
+                      </i>
                       <span>155, Mata Ka Than, Jodhpur, India 342001</span>
                     </li>
                   </ul>
@@ -200,7 +240,7 @@ function Footer() {
               <div className="col-md-12 text-center">
                 <span className="copyright-text">
                   Copyright © 2022{" "}
-                  <a href="https://dadhichtechnologies.com/" target="_blank">
+                  <a href="https://dadhichtechnologies.com/">
                     Dadhich Technologies
                   </a>
                   . All rights reserved.

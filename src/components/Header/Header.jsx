@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 function Header() {
   const [show, setShow] = useState(false);
@@ -42,7 +43,7 @@ function Header() {
                       style={
                         !scroll ? { display: "none" } : { display: "block" }
                       }
-                      src="images/logo_dark.svg"
+                      src="C"
                       alt=""
                     />
                   </a>
@@ -79,7 +80,7 @@ function Header() {
                 <div className="logo-header">
                   <Link to="/">
                     <a>
-                      <img src="images/logo-3.png" alt="" />
+                      <img src='images/logo_dark.svg' alt="" />
                     </a>
                   </Link>
                 </div>
@@ -93,7 +94,9 @@ function Header() {
                   <li className={`${open === "services" ? "open" : ""}`}>
                     <a onClick={() => setOpen("services")}>
                       <span className="animate">Services</span>
-                      <i className="fa fa-chevron-down"></i>
+                      <i className="fa fa-chevron-down">
+                        <MdKeyboardArrowRight/>
+                      </i>
                     </a>
                     <ul className="sub-menu">
                       <li>

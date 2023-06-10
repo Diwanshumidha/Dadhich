@@ -20,6 +20,7 @@ function Speciallization() {
 								<span className="icon-cell"><i className="flaticon-office"></i></span> 
 							</div>
 							<div className="icon-content">
+							
 								<h4 className="dlab-title m-b15 cap">Ui/Ux Design</h4>
 								<p className="m-b20">Step into a world of captivating design and unforgettable user experiences. Our UI/UX wizards weave magic through visually stunning interfaces that leave users breathless. Elevate your digital presence with our expertise and watch your audience fall in love at first click.</p>
 								<Link href="/services-3"><a className="btn btn-outline-primary service_btn">Learn More</a></Link>

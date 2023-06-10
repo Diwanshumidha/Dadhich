@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+
 function Header2() {
   const [show, setShow] = useState(false);
   const [open, setOpen] = useState("home");
@@ -54,7 +55,7 @@ function Header2() {
                       src="images/logo-white.png"
                       alt=""
                     />
-                    <img className="custom-logo" src="images/logo.png" alt="" />
+                    <img className="custom-logo" src='images/logo_dark.svg' alt="" />
                   </a>
                 </Link>
               </div>
@@ -87,8 +88,8 @@ function Header2() {
               >
                 <div className="logo-header">
                   <Link href="/">
-                    <a>
-                      <img src="images/logo.png" alt="" />
+                    <a style={{width:'100%',height:'100%'}}>
+                      <img src="images/logo_dark.svg" style={{width:'190px',height:'31px'}} alt="" />
                     </a>
                   </Link>
                 </div>
