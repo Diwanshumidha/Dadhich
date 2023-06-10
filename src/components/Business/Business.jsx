@@ -6,6 +6,11 @@ import TMClient from "./TmClient";
 import TeamSlider from "./TeamSlider";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import { GiBrain } from "react-icons/gi";
+import { TfiVector } from "react-icons/tfi";
+import { FaLaptopCode } from "react-icons/fa";
+import { RxRocket } from "react-icons/rx";
+
 
 function Business() {
   const [open, setOpen] = useState("p2");
@@ -64,7 +69,7 @@ function Business() {
                     <div className="icon-bx-wraper left m-b50 icon-up">
                       <div className="icon-bx-sm radius gradient-sec shadow-primary m-b20">
                         <a href="#" className="icon-cell text-white">
-                          <i className="flaticon-idea"></i>
+                          <GiBrain className="flaticon-idea"></GiBrain>
                         </a>
                       </div>
                       <div className="icon-content">
@@ -86,7 +91,7 @@ function Business() {
                     <div className="icon-bx-wraper left m-b50 icon-up">
                       <div className="icon-bx-sm radius gradient-sec shadow-primary m-b20">
                         <a href="#" className="icon-cell text-white">
-                          <i className="flaticon-vector"></i>
+                          <TfiVector className="flaticon-vector"></TfiVector>
                         </a>
                       </div>
                       <div className="icon-content">
@@ -121,7 +126,7 @@ function Business() {
                     <div className="icon-bx-wraper left m-b50 icon-up">
                       <div className="icon-bx-sm radius gradient-sec shadow-primary m-b20">
                         <a href="#" className="icon-cell text-white">
-                          <i className="flaticon-coding"></i>
+                          <FaLaptopCode className="flaticon-coding"></FaLaptopCode>
                         </a>
                       </div>
                       <div className="icon-content">
@@ -143,7 +148,7 @@ function Business() {
                     <div className="icon-bx-wraper left m-b50 icon-up">
                       <div className="icon-bx-sm radius gradient-sec shadow-primary m-b20">
                         <a href="#" className="icon-cell text-white">
-                          <i className="flaticon-rocket"></i>
+                          <RxRocket className="flaticon-rocket"></RxRocket>
                         </a>
                       </div>
                       <div className="icon-content">

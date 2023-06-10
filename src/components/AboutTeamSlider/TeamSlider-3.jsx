@@ -1,22 +1,40 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper";
+import Slider from "react-slick";
 
-function TeamSlider() {
+function TeamSlider3() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: true,
+    arrows: false,
+    speed: 3500,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        },
+      },
+    ],
+  };
   return (
     <>
-      <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        slidesPerView={4}
-        loop={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay]}
+      <Slider
+        {...settings}
         className="team-carousel2 owl owl-carousel owl-none owl-theme owl-dots-primary-full"
       >
-        <SwiperSlide
+        <div
           className="item wow fadeInUp"
           data-wow-duration="2s"
           data-wow-delay="0.1s"
@@ -34,8 +52,8 @@ function TeamSlider() {
               </div>
             </div>
           </div>
-        </SwiperSlide>
-        <SwiperSlide
+        </div>
+        <div
           className="item wow fadeInUp"
           data-wow-duration="2s"
           data-wow-delay="0.2s"
@@ -53,8 +71,8 @@ function TeamSlider() {
               </div>
             </div>
           </div>
-        </SwiperSlide>
-        <SwiperSlide
+        </div>
+        <div
           className="item wow fadeInUp"
           data-wow-duration="2s"
           data-wow-delay="0.3s"
@@ -72,8 +90,8 @@ function TeamSlider() {
               </div>
             </div>
           </div>
-        </SwiperSlide>
-        <SwiperSlide
+        </div>
+        <div
           className="item wow fadeInUp"
           data-wow-duration="2s"
           data-wow-delay="0.4s"
@@ -91,8 +109,8 @@ function TeamSlider() {
               </div>
             </div>
           </div>
-        </SwiperSlide>
-        <SwiperSlide
+        </div>
+        <div
           className="item wow fadeInUp"
           data-wow-duration="2s"
           data-wow-delay="0.5s"
@@ -110,8 +128,8 @@ function TeamSlider() {
               </div>
             </div>
           </div>
-        </SwiperSlide>
-        <SwiperSlide
+        </div>
+        <div
           className="item wow fadeInUp"
           data-wow-duration="2s"
           data-wow-delay="0.6s"
@@ -129,8 +147,8 @@ function TeamSlider() {
               </div>
             </div>
           </div>
-        </SwiperSlide>
-        <SwiperSlide
+        </div>
+        <div
           className="item wow fadeInUp"
           data-wow-duration="2s"
           data-wow-delay="0.7s"
@@ -148,8 +166,8 @@ function TeamSlider() {
               </div>
             </div>
           </div>
-        </SwiperSlide>
-        <SwiperSlide
+        </div>
+        <div
           className="item wow fadeInUp"
           data-wow-duration="2s"
           data-wow-delay="0.8s"
@@ -167,8 +185,8 @@ function TeamSlider() {
               </div>
             </div>
           </div>
-        </SwiperSlide>
-        <SwiperSlide
+        </div>
+        <div
           className="item wow fadeInUp"
           data-wow-duration="2s"
           data-wow-delay="0.9s"
@@ -186,8 +204,8 @@ function TeamSlider() {
               </div>
             </div>
           </div>
-        </SwiperSlide>
-        <SwiperSlide
+        </div>
+        <div
           className="item wow fadeInUp"
           data-wow-duration="2s"
           data-wow-delay="1.0s"
@@ -205,8 +223,8 @@ function TeamSlider() {
               </div>
             </div>
           </div>
-        </SwiperSlide>
-        <SwiperSlide
+        </div>
+        <div
           className="item wow fadeInUp"
           data-wow-duration="2s"
           data-wow-delay="1.1s"
@@ -224,8 +242,8 @@ function TeamSlider() {
               </div>
             </div>
           </div>
-        </SwiperSlide>
-        <SwiperSlide
+        </div>
+        <div
           className="item wow fadeInUp"
           data-wow-duration="2s"
           data-wow-delay="1.2s"
@@ -243,10 +261,10 @@ function TeamSlider() {
               </div>
             </div>
           </div>
-        </SwiperSlide>
-      </Swiper>
+        </div>
+      </Slider>
     </>
   );
 }
 
-export default TeamSlider;
+export default TeamSlider3;

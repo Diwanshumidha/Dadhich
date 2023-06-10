@@ -10,6 +10,9 @@ import Dating from './components/Dating/Dating';
 import Privacy from './components/Privacy/Privacy';
 import Term from './components/TermCondition/Term';
 import Portfolio from './pages/Portfolio/Portfolio';
+import AboutUs from './components/AboutUs/AboutUs';
+// import TeamMembers from './components/TeamMembers/TeamMembers';
+// import AboutUs from './components/AboutUS/AboutUs';
 
 
 const App = () => {
@@ -25,6 +28,8 @@ const App = () => {
       <Route path='/Dating' element={<Dating/>} />
       <Route path='/Privacy' element={<Privacy/>} />
       <Route path='/Term' element={<Term/>} />
+      <Route path='/about' element={<AboutUs/>} />
+      {/* <Route path='/team' element={<TeamMembers/>} /> */}
     </Routes>
   )
 }

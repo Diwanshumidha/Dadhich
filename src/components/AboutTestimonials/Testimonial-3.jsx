@@ -1,6 +1,6 @@
-import TMSlider from "./TMSlider";
+import TestimonialSlider3 from "./TestimonialSlider-3";
 
-function BTestimonials() {
+function Testimonial3() {
   return (
     <>
       <section className="content-inner-1 bg-gray bg_tree">
@@ -9,11 +9,11 @@ function BTestimonials() {
             <h2 className="title white">What Our Clients Say’s</h2>
             <div className="dlab-separator style-2 bg-primary"></div>
           </div>
-          <TMSlider />
+          <TestimonialSlider3 />
         </div>
       </section>
     </>
   );
 }
 
-export default BTestimonials;
+export default Testimonial3;

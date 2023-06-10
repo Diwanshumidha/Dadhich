@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Header() {
   const [show, setShow] = useState(false);
@@ -90,20 +89,7 @@ function Header() {
                       <a>Home</a>
                     </Link>
                   </li>
-                  {/* <li className={`${open === "about" ? "open" : ""}`}><a  onClick={() => setOpen("about")}><span>Pages</span><i className="fa fa-chevron-down"></i></a>
-                                    <ul className="sub-menu">
-                                        
-                                       
-                                        
-										<li><Link to="/about-us-3"><a>About Us</a></Link></li>
-                                        <li><Link to="/faq-3"><a>Faq</a></Link></li>
-										<li><Link to="/pricing-table-3"><a>Pricing Table</a></Link></li>
-										<li><Link to="/team-3"><a>Team</a></Link></li>
-                                        <li><Link to="/coming-soon"><a>Coming Soon</a></Link></li>
-                                        <li><Link to="/error-404"><a>Error 404</a></Link></li>
-                                        <li><Link to="/sitedown"><a>Site Down</a></Link></li>
-                                    </ul>
-                                </li> */}
+
                   <li className={`${open === "services" ? "open" : ""}`}>
                     <a onClick={() => setOpen("services")}>
                       <span className="animate">Services</span>
@@ -142,18 +128,7 @@ function Header() {
                       <a>Contact Us</a>
                     </Link>
                   </li>
-                  {/* <li className={`${open === "contact" ? "open" : ""}`}><a onClick={() => setOpen("contact")}><span className='animate'>Looking For</span><i className="fa fa-chevron-down"></i></a>
-                                    <ul className="sub-menu">
-										<li><Link to="#"><a>Landing Page</a></Link></li>
-										<li><Link to="#"><a>Portfolio WebSite</a></Link></li>
-										<li><Link to="#"><a>Coperate Website</a></Link></li>
-										<li><Link to="#"><a>E-Commerce Website</a></Link></li>
-										<li><Link to="#"><a>Dating-Matrimonial Website</a></Link></li>
-										<li><Link to="#"><a>Coupon & Deal Website</a></Link></li>
-										<li><Link to="#"><a>Small Business Website</a></Link></li>
-										<li><Link to="#"><a>Custom Web Development</a></Link></li>
-                                    </ul>
-                                </li> */}
+
                   <li>
                     <Link to="/blog">
                       <a>Blog</a>
