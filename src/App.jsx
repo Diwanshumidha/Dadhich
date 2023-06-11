@@ -11,6 +11,7 @@ import Privacy from './components/Privacy/Privacy';
 import Term from './components/TermCondition/Term';
 import Portfolio from './pages/Portfolio/Portfolio';
 import AboutUs from './components/AboutUs/AboutUs';
+import GetInTouch from './pages/GetInTouch';
 // import TeamMembers from './components/TeamMembers/TeamMembers';
 // import AboutUs from './components/AboutUS/AboutUs';
 
@@ -29,7 +30,7 @@ const App = () => {
       <Route path='/Privacy' element={<Privacy/>} />
       <Route path='/Term' element={<Term/>} />
       <Route path='/about' element={<AboutUs/>} />
-      {/* <Route path='/team' element={<TeamMembers/>} /> */}
+      <Route path='/GetInTouch' element={<GetInTouch/>} />
     </Routes>
   )
 }

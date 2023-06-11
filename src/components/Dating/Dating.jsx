@@ -17,7 +17,7 @@ const Dating = () => {
     <>
       <div className="business_section">
         <Header/>
-        <div className="heading">
+        {/* <div className="heading">
           <h1 className="main_heading">
           Designing the Future of Love: Dating & Matrimonial Website
           </h1>
@@ -47,7 +47,96 @@ const Dating = () => {
               </a>
             </Link>
           </div>
-        </div>
+        </div> */}
+                         <div className="container">
+            <div className="banner-inner">
+              <div className="row align-items-center"
+              style={{
+                paddingTop:"10rem"
+              }}
+              >
+                <div className="col-md-6">
+                  <div className="banner-content text-white"
+                  
+                  >
+                    <h6
+                      data-wow-delay="0.5s"
+                      data-wow-duration="3s"
+                      className="wow fadeInUp sub-title text-yellow"
+                    >
+                      BEST DATING  MATRIMONIAL WEBSITE DEVELOPMENT
+                   
+                    </h6> 
+                    <br />
+                    <br />
+              
+                    <h1
+                      data-wow-delay="1s"
+                      data-wow-duration="3s"
+                      className="wow fadeInUp m-b20"
+                      style={{fontSize: "3rem",
+                      paddingTop: "2rem",
+                      color: "white"
+                      
+                    }}
+                    >
+                   Designing the Future of Love: Dating & Matrimonial Website
+                    </h1>
+                    <p
+                      data-wow-delay="1.5s"
+                      data-wow-duration="3s"
+                      className="wow fadeInUp m-b30"
+                    >
+                       Create your own dating website similar to Match.com, OkCupid or eHarmony.
+                    </p>
+                    <div className="button_container">
+                      <Link to="/GetInTouch">
+                        <a
+                          data-wow-delay="2s"
+                          data-wow-duration="3s"
+                          className="wow fadeInUp  btn btn-corner gradient btn-primary"
+                        >
+                          HIRE US
+                        </a>
+                      </Link>
+                      {/* <Link to="#portfolio">
+                      <a
+                        data-wow-delay="2s"
+                        data-wow-duration="3s"
+                        className="wow fadeInUp  btn btn-corner hero_portfolio gradient btn-primary"
+                      >
+                        PORTFOLIO
+                      </a>
+                    </Link> */}
+                      <Link to="https://wa.me/+918696219723">
+                        <a
+                          data-wow-delay="2s"
+                          data-wow-duration="3s"
+                          className="wow fadeInUp business_btn business_btn--outline  btn btn-corner gradient btn-primary"
+                        >
+                          <div className="fa fa-whatsapp"></div>
+                          WHATSAPP
+                        </a>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div
+                    className="dz-media wow fadeIn"
+                    data-wow-delay="1s"
+                    data-wow-duration="3s"
+                  >
+                    <img
+                      src="images/main-slider/slider3/pic1.png"
+                      className="move-1"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
       {/* <Features3 /> */}
       {/* <D_Portfolio hidden={true} category='ecom'></D_Portfolio> */}
@@ -60,8 +149,7 @@ const Dating = () => {
       <DuplicatePort/>
       <Development/>
       <DatingFeatures/>
-      <Process/>
-      <FeaturesDuplicate/>
+    
       <DatingFAQ/>
       <GetInTouch/>
       <Footer/>

@@ -14,6 +14,9 @@ function Header() {
     });
   }, []);
 
+  const BgColor = {
+    backgroundColor: "rgba(255, 255, 25" 
+  }
   return (
     <>
       {/* <!-- Header --> */}
@@ -24,16 +27,17 @@ function Header() {
             scroll ? "is-fixed" : ""
           }`}
         >
-          <div className="main-bar clearfix ">
+          <div className="main-bar clearfix   "> 
             <div className="container clearfix">
               {/* <!-- Website Logo --> */}
-              <div className="logo-header mostion logo-dark">
+              <div className="logo-header mostion logo-dark ">
                 <Link to="/">
                   <a>
                     <img
                       className="custom-logo-white"
-                      style={
-                        scroll ? { display: "none" } : { display: "block" }
+                      style={ 
+                
+                        scroll ? { display: `block ${BgColor}`  } : { display: "block" }
                       }
                       src="images/logo_white.svg"
                       alt=""
@@ -80,7 +84,7 @@ function Header() {
                 <div className="logo-header">
                   <Link to="/">
                     <a>
-                      <img src='images/logo_dark.svg' alt="" />
+                      <img src="images/logo_dark.svg" alt="" />
                     </a>
                   </Link>
                 </div>
@@ -95,15 +99,15 @@ function Header() {
                     <a onClick={() => setOpen("services")}>
                       <span className="animate">Services</span>
                       <i className="fa fa-chevron-down">
-                        <MdKeyboardArrowRight/>
+                        <MdKeyboardArrowRight />
                       </i>
                     </a>
                     <ul className="sub-menu">
-                      <li>
+                      {/* <li>
                         <Link to="/Business">
                           <a>Business Web Development</a>
                         </Link>
-                      </li>
+                      </li> */}
                       <li>
                         <Link to="/Ecom">
                           <a>E-commerce Website</a>

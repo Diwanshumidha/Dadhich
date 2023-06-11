@@ -1,7 +1,6 @@
 import React from "react";
-// import Header3 from "../layout/header-3";
-// import Link from "next/link";
-import {Link} from "react-router-dom";
+
+import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import Process from "../../components/Process/Process";
 import GetInTouch3 from "../../components/GetInTouch/get-in-touch";
@@ -17,8 +16,16 @@ const E_Com = () => {
     <>
       <div className="business_section">
         {/* <Header3 /> */}
-        <Header/>
-        <div className="heading">
+        <Header />
+
+        {/* <div className="heading">
+          <h6
+            data-wow-delay="0.5s"
+            data-wow-duration="3s"
+            className="wow fadeInUp sub-title text-yellow"
+          >
+            BEST E-COMMERCE WEBSITE & APP DEVELOPMENT
+          </h6>
           <h1 className="main_heading">
             Unlock Your Ecommerce Success with a Stunning Online Presence
           </h1>
@@ -45,21 +52,114 @@ const E_Com = () => {
                 className="wow fadeInUp business_btn business_btn--outline  btn btn-corner gradient btn-primary"
               >
                 <div className="fa fa-whatsapp"></div>
-
                 WHATSAPP
               </a>
             </Link>
           </div>
+        </div> */}
+
+        <div
+          className="banner-three bg-primary"
+          style={{
+            backgroundImage:
+              "url(images/background/bg5.png), url(images/background/bg6.png), var(--gradient-sec)",
+          }}
+        >
+
+
+          
+          <div className="container">
+            <div className="banner-inner">
+              <div className="row align-items-center">
+                <div className="col-md-6">
+                  <div className="banner-content text-white">
+                    <h6
+                      data-wow-delay="0.5s"
+                      data-wow-duration="3s"
+                      className="wow fadeInUp sub-title text-yellow rizwan"
+                      
+                    >
+                      BEST E-COMMERCE WEBSITE & APP DEVELOPMENT
+                    </h6>
+                    <h1
+                      data-wow-delay="1s"
+                      data-wow-duration="3s"
+                      className="wow fadeInUp m-b20"
+                    >
+                      Unlock Your Ecommerce Success with a Stunning
+                      Online Presence
+                    </h1>
+                    <p
+                      data-wow-delay="1.5s"
+                      data-wow-duration="3s"
+                      className="wow fadeInUp m-b30"
+                    >
+                      Open the doors to ecommerce success. Our digital agency
+                      creates stunning online experiences that captivate
+                      customers and drive tangible results.
+                    </p>
+                    <div className="button_container">
+                      <Link to="/GetInT">
+                        <a
+                          data-wow-delay="2s"
+                          data-wow-duration="3s"
+                          className="wow fadeInUp  btn btn-corner gradient btn-primary"
+                        >
+                          HIRE US
+                        </a>
+                      </Link>
+                      {/* <Link to="#portfolio">
+                      <a
+                        data-wow-delay="2s"
+                        data-wow-duration="3s"
+                        className="wow fadeInUp  btn btn-corner hero_portfolio gradient btn-primary"
+                      >
+                        PORTFOLIO
+                      </a>
+                    </Link> */}
+                      <Link to="https://wa.me/+918696219723">
+                        <a
+                          data-wow-delay="2s"
+                          data-wow-duration="3s"
+                          className="wow fadeInUp business_btn business_btn--outline  btn btn-corner gradient btn-primary"
+                        >
+                          <div className="fa fa-whatsapp"></div>
+                          WHATSAPP
+                        </a>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div
+                    className="dz-media wow fadeIn"
+                    data-wow-delay="1s"
+                    data-wow-duration="3s"
+                  >
+                    <img
+                      src="images/main-slider/slider3/pic1.png"
+                      className="move-1"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
         </div>
       </div>
-      <OurFeatures/>
+      <OurFeatures />
 
-      <EComPortfolio hidden={true} category='ecom'/>
+      <EComPortfolio hidden={true} category="ecom" />
       {/* <EUserFeature hidden={true} category='ecom'/> */}
-      <Process/>
-      <FaqEcom/>
-      <GetInTouch/>
-      <Footer/>
+      <Process />
+      <FaqEcom />
+      <GetInTouch />
+      <Footer />
     </>
   );
 };
