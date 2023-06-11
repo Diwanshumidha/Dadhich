@@ -1,10 +1,10 @@
-import React from "react";
-import { Carousel } from 'react-responsive';
+
+// import { Carousel } from 'react-responsive';
 import s from "./EcomUserFeatures.module.css";
-// import img_logo from "../../public/svg/svgexport-12.svg";
 import img_logo from "../../../public/svg/svgexport-12.svg";
 
 import { useState } from "react";
+import { address, business, camera, costumer, discount, filter, history, login, loyalty, mobile, news, product, question, related, returns, review, secure, shopping, track, wishlist } from '../../../public/featureslogo/User'
 // import {address,business,camera,costumer,discount,filter,history,login,loyalty,mobile,news,question,related,returns,review,secure,shoping,track,Wishlists,process}
 // from './index';
 
@@ -96,83 +96,83 @@ const adminfeatures = [
 const userfeatures = [
   {
     name: "Product Search",
-    link: "address",
+    link: filter,
   },
   {
     name: "Advanced Filtering",
-    link: "filter",
+    link: filter,
   },
   {
     name: "Product Images",
-    link: "/images/featureslogo/icon23",
+    link: product,
   },
   {
     name: "Product Descriptions",
-    link: "/images/featureslogo/icon24",
+    link: camera,
   },
   {
     name: "Product Reviews and Ratings",
-    link: "/images/featureslogo/icon25",
+    link: review,
   },
   {
     name: "Shopping Cart",
-    link: "/images/featureslogo/icon26",
+    link: shopping,
   },
   {
     name: "Secure Checkout",
-    link: "/images/featureslogo/icon27",
+    link: secure,
   },
   {
     name: "Order Tracking",
-    link: "/images/featureslogo/icon28",
+    link: track,
   },
   {
     name: "User Accounts",
-    link: "/images/featureslogo/icon29",
+    link: login,
   },
   {
     name: "Wishlists",
-    link: "/images/featureslogo/icon30",
+    link: wishlist,
   },
   {
     name: "Discounts and Promotions",
-    link: "/images/featureslogo/icon31",
+    link: discount,
   },
   {
     name: "Related Products",
-    link: "/images/featureslogo/icon32",
+    link: related,
   },
   {
     name: "Social Media Integration",
-    link: "/images/featureslogo/icon33",
+    link: news,
   },
   {
     name: "Customer Support",
-    link: "/images/featureslogo/icon34",
+    link: costumer,
   },
   {
     name: "Returns and Refunds",
-    link: "/images/featureslogo/icon35",
+    link: returns,
   },
   {
     name: "Order History",
-    link: "/images/featureslogo/icon36",
+    link: history,
   },
   {
     name: "Account Security",
-    link: "/images/featureslogo/icon37",
+    link: secure,
   },
   {
     name: "Mobile Responsiveness",
-    link: "/images/featureslogo/icon38",
+    link: mobile,
   },
   {
     name: "Newsletter Subscription",
-    link: "/images/featureslogo/icon39",
+    link: business,
   },
   {
     name: "Loyalty Programs",
-    link: "/images/featureslogo/icon40",
+    link: loyalty,
   },
 ];
 
@@ -228,29 +228,25 @@ const EUserFeature = () => {
                 />
               ))}
         </div>
-        <button onClick={handleExpandClick}>More Features</button>
+        <button onClick={handleExpandClick}>{!expanded?'More Features':'Show Less'}</button>
       </div>
     </section>
   );
 };
 
-const Card = ({ name, ids }) => {
+const Card = ({ name, ids , img_logo:image_link }) => {
   return (
     <div className={`${s.card} ${ids}`} id={ids} >
       {/* <Image src={img_logo} width={60} height={60}></Image> */}
-      <Carousel>
-          <img rc={img_logo} width={60} height={60} alt="Image logo" />
-        </Carousel>
+      {console.log(image_link)}
+          <img src={image_link} width={60} height={60} alt="Image logo" />
+          
       <h4>{name}</h4>
     </div>
   );
 };
 
 export default EUserFeature;
-
-
-
-
 
 
 

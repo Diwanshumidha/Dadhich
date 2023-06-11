@@ -43,7 +43,7 @@ function Services3() {
         <section className="content-inner bg-gray">
           <div className="container">
             <div className="section-head style-3 text-center">
-              <h2 className="title">Why Choose Us</h2>
+              <h2 className="title">Why Choose Us <br/></h2>
               <div className="dlab-separator style-2 bg-primary"></div>
             </div>
             <div className="row align-items-center about-wraper-2">
@@ -171,7 +171,7 @@ function Services3() {
           <div className="container">
             <div className="row align-items-center subscribe-wraper-1">
               <div className="col-lg-7 col-md-6">
-                <h2 className="text-white title m-b30">
+                <h2 className="text-white title m-b30" style={{marginBottom:'1rem'}}>
                   Subscribe To Our Newsletter For Latest Update Of New Products
                 </h2>
               </div>

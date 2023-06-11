@@ -1,3 +1,6 @@
+import { AiOutlineWhatsApp } from "react-icons/ai";
+import { BsSkype } from "react-icons/bs";
+
 function GetInTouch() {
     return (
         <>
@@ -13,13 +16,17 @@ function GetInTouch() {
                         <div className="col-lg-6 m-b30 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.4s">
                             <form className="dlab-form style-1 dzForm" method="POST" action="script/contact.php">
                                 <div className="section-head style-3">
-                                    <h2 className="title m-t10">Get In Touch With Us</h2>
+                                    <h2 className="title m-t10">Get In Touch With Us<br/></h2>
                                     <div className="dlab-separator style-2 bg-primary"></div>
                                 </div>
                                 <div className=".dlab-social-icon contact_dlab">
                                     <h5 style={{ "margin-bottom": "40px", "margin-right": "10px" }}>Reach Us On -</h5>
-                                    <a class="fa fa-whatsapp con_whatsapp" href="https://twitter.com/login?lang=en"></a>
-                                    <a class="fa fa-skype con_whatsapp" href="https://twitter.com/login?lang=en"></a>
+                                    <a className="fa fa-whatsapp con_whatsapp" style={{display:'flex',justifyContent:'center',alignItems:'center'}} href="https://twitter.com/login?lang=en">
+                                        <AiOutlineWhatsApp/>
+                                    </a>
+                                    <a className="fa fa-skype con_whatsapp" style={{display:'flex',justifyContent:'center',alignItems:'center'}} href="https://twitter.com/login?lang=en">
+                                        <BsSkype/>
+                                    </a>
 
                                 </div>
                                 <div className="dzFormMsg"></div>
@@ -42,9 +49,7 @@ function GetInTouch() {
                                         <div className="input-group code_group" style={{
                                             width: "20%"
                                         }}>
-                                            <input name="countrycode" type="text" required className="form-control code " placeholder="+91" style={
-                                                { 'border-top-right-radius': '0 !important;  ' }
-                                            } />
+                                            <input name="countrycode" type="text" required className="form-control code " placeholder="+91" style={{ 'border-top-right-radius': '0 !important;' , minWidth:'max-content !important' }} />
                                         </div>
                                         <div className="input-group phno_group" style={{
                                             width: "80%"

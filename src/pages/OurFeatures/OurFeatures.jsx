@@ -12,7 +12,7 @@ function OurFeatures() {
       <section className="content-inner bg-white " id="feature">
         <div className="container my-3">
           <div className="section-head style-3 text-center">
-            <h2 className="title">Why Choose Us</h2>
+            <h2 className="title">Why Choose Us <br/></h2>
             <div className="dlab-separator style-2 bg-primary"></div>
           </div>
           <div className="row align-items-center about-wraper-2">

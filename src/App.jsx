@@ -12,12 +12,15 @@ import Term from './components/TermCondition/Term';
 import Portfolio from './pages/Portfolio/Portfolio';
 import AboutUs from './components/AboutUs/AboutUs';
 import GetInTouch from './pages/GetInTouch';
+import Layout from './components/HOC/Layout';
 // import TeamMembers from './components/TeamMembers/TeamMembers';
 // import AboutUs from './components/AboutUS/AboutUs';
 
 
 const App = () => {
   return (
+    <div>
+      <Layout/>
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/Business' element={<Business/>}/>
@@ -32,6 +35,7 @@ const App = () => {
       <Route path='/about' element={<AboutUs/>} />
       <Route path='/GetInTouch' element={<GetInTouch/>} />
     </Routes>
+    </div>
   )
 }
 

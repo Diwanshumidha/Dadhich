@@ -29,7 +29,7 @@ function Footer() {
                   <div className="footer-logo">
                     <Link href="/">
                       <a>
-                        <img src="images/logo-white.png" alt="" />
+                        <img src="images/logo_white.svg" style={{width:'190px' , height:'31px'}} alt="" />
                       </a>
                     </Link>
                   </div>

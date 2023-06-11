@@ -15,7 +15,7 @@ function AboutUs3() {
             </div>
             <div className="col-lg-6">
               <div className="section-head style-3 mb-4">
-                <h2 className="title">Why Our Agency</h2>
+                <h2 className="title">Why Our Agency <br/></h2>
                 <div className="dlab-separator style-2 bg-primary"></div>
               </div>
               <p>

@@ -17,7 +17,8 @@ function Index3() {
           <Speciallization />
           <OurAgency />
           <OurFeatures />
-          <D_Portfolio />
+          <D_Portfolio category={'all product'} />
+          
           <Newsletter />
           <Testimonial3 />
           <Footer />

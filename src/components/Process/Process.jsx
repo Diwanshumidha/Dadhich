@@ -16,7 +16,7 @@ const Process = () => {
     <div className={s.portfolio}>
       <div className={s.heading}>
         <span>Process</span>
-        <h2>Our Development Process</h2>
+        <h2 style={{maxWidth:'90%',textAlign:'center'}}>Our Development Process</h2>
 
         <div className={s.card_container1}>
           <Card

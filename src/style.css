@@ -3668,7 +3668,7 @@ input[type="button"].btn-block {
 .input-group > .custom-file {
   position: relative;
   flex: 1 1 auto;
-  width: 1%;
+  width: 9ch;
   margin-bottom: 0;
 }
 .input-group > .form-control + .form-control,
@@ -16741,16 +16741,16 @@ textarea {
   border-radius: 8px;
   line-height: 57px;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   transition: all 0.5s;
 }
 .dlab-accordion .card-header .dlab-title a:before {
-  content: "\e61a";
+  content: "\2716";
   color: #f01f75;
   position: absolute;
   right: 20px;
   top: 20px;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "themify";
   z-index: 99;
   opacity: 1;
@@ -16762,7 +16762,7 @@ textarea {
   color: #111942;
 }
 .dlab-accordion .card-header .dlab-title a.collapsed:after {
-  content: "\e61a";
+  content: "\2716";
   color: #fff;
   background-image: var(--gradient);
   background-size: 200%;
@@ -16785,11 +16785,11 @@ textarea {
   right: 5px;
   top: 6px;
   line-height: 40px;
-  font-size: 20px;
+  font-size: 13px;
   background-color: #fff;
 }
 .dlab-accordion.accordion-sm .card-header .dlab-title a:before {
-  right: 14px;
+  right: 18px;
   top: 14px;
   font-size: 20px;
 }
@@ -17700,6 +17700,20 @@ ul.primary li:before {
     font-size: 16px;
   }
   .section-head.style-3 h2.title {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+   .section_heading{
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .section_heading{
+    font-size: 16px;
+  }
+  .section_heading{
     font-size: 32px;
   }
 }

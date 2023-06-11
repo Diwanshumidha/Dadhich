@@ -13,7 +13,7 @@ function Counter3() {
           <div className="dlab-content-bx style-2 text-center">
             <div className="icon-content">
               <h2 className="counter m-b0">
-                <Counterup count={127} />+
+                <Counterup count={127} />+ <br/>
               </h2>
               <span className="title">Satisfied Clients</span>
             </div>
@@ -27,7 +27,7 @@ function Counter3() {
           <div className="dlab-content-bx style-2 text-center">
             <div className="icon-content">
               <h2 className="counter m-b0">
-                <Counterup count={320} />+
+                <Counterup count={320} />+ <br/>
               </h2>
               <span className="title">Project Lunched</span>
             </div>
@@ -41,7 +41,7 @@ function Counter3() {
           <div className="dlab-content-bx style-2 text-center">
             <div className="icon-content">
               <h2 className="counter m-b0">
-                <Counterup count={5} />
+                <Counterup count={5} /><br/>
               </h2>
               <span className="title">Years Completed</span>
             </div>

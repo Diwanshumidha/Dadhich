@@ -10,7 +10,7 @@ function Service3() {
       <section className="content-inner" id="service">
         <div className="container">
           <div className="section-head style-3 text-center mb-4">
-            <h2 className="title">Our Speciallization</h2>
+            <h2 className="title">Our Speciallization <br/></h2>
             <div className="dlab-separator style-2 bg-primary"></div>
           </div>
           <div className="row">

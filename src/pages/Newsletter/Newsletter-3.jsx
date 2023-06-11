@@ -15,8 +15,8 @@ function Newsletter3() {
       >
         <div className="container">
           <div className="row align-items-center subscribe-wraper-1">
-            <div className="col-lg-7 col-md-6">
-              <h2 className="text-white title m-b30">
+            <div className="col-lg-7 col-md-6" style={{marginBottom:'1rem !important'}}>
+              <h2 className="text-white title m-b30" >
                 Subscribe To Our Newsletter For Latest Update Of New Products
               </h2>
             </div>

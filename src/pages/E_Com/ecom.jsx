@@ -3,10 +3,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import Process from "../../components/Process/Process";
-import GetInTouch3 from "../../components/GetInTouch/get-in-touch";
 import OurFeatures from "../OurFeatures/OurFeatures";
-import EUserFeature from "./EcomUserFeatures";
 import Footer from "../../components/Footer/Footer";
+import EUserFeature from './EcomUserFeatures'
 import FaqEcom from "./FaqEcom";
 import GetInTouch from "../GetInTouch";
 import EComPortfolio from "./EComPortfolio";
@@ -155,7 +154,8 @@ const E_Com = () => {
       <OurFeatures />
 
       <EComPortfolio hidden={true} category="ecom" />
-      {/* <EUserFeature hidden={true} category='ecom'/> */}
+      <EUserFeature/>
+     
       <Process />
       <FaqEcom />
       <GetInTouch />

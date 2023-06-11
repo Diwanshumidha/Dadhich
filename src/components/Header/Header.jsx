@@ -33,7 +33,7 @@ function Header() {
               <div className="logo-header mostion logo-dark ">
                 <Link to="/">
                   <a>
-                    <img
+                    {/* <img
                       className="custom-logo-white"
                       style={ 
                 
@@ -49,7 +49,10 @@ function Header() {
                       }
                       src="C"
                       alt=""
-                    />
+                    /> */}
+                    <img 
+                      className="custom-logo"
+                      src={scroll?"images/logo_dark.svg":"images/logo_white.svg"}/>
                   </a>
                 </Link>
               </div>
