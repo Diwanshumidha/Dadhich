@@ -18,6 +18,9 @@ import secure from './secure.png';
 import shopping from './shopping.png';
 import track from './track.png';
 import wishlist from './wishlist.png';
+import addtocart from './addtocart.png';
+import productsearch from './productsearch.png';
+import ProductManagement from '../Admin/ProductManagement.png';
 
 export {
   address,
@@ -40,4 +43,7 @@ export {
   shopping,
   track,
   wishlist,
+  addtocart,
+  productsearch,
+  ProductManagement,
 };
