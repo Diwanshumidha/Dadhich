@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import {AiOutlineSwapRight ,AiFillMail } from 'react-icons/ai'
 import { ImLocation } from 'react-icons/im'
 import { BsTelephoneFill } from "react-icons/bs";
+import { BsInstagram,BsTwitter,BsLinkedin,BsSkype,BsWhatsapp } from "react-icons/bs";
+import { HiOutlineMail } from "react-icons/hi";
 
 
 function Footer() {
@@ -44,41 +46,44 @@ function Footer() {
                     <ul>
                       <li>
                         <a
-                          className="fa fa-whatsapp"
+                          className="linkedin fa fa-whatsapp"
                           href="https://wa.me/+918696219723"
-                        ></a>
+                        ><BsWhatsapp className="fa fa-whatsapp" aria-hidden="true"></BsWhatsapp></a>
                       </li>
                       <li>
                         <a
-                          className="fa fa-skype"
+                          className="linkedin fa fa-skype"
                           href="https://join.skype.com/invite/sNPTbGeKymg2"
-                        ></a>
+                        ><BsSkype className="fa fa-skype" aria-hidden="true"></BsSkype></a>
                       </li>
                       <li>
                         <a
-                          className="fa fa-linkedin"
+                          className="linkedin fa fa-linkedin"
                           href="https://www.linkedin.com/company/dadhich-technologies/"
-                        ></a>
+                        ><BsLinkedin className="fa fa-linkedin" aria-hidden="true"></BsLinkedin></a>
                       </li>
                       <li>
                         <a
-                          className="fa fa-twitter"
+                          className="linkedin fa fa-twitter"
                           href="https://twitter.com/DadhichTech"
-                        ></a>
+                        >
+                          <BsTwitter className="fa fa-twitter" aria-hidden="true"></BsTwitter>
+                        </a>
                       </li>
                       <li>
                         <a
-                          className="fa fa-instagram"
+                          className="linkedin fa fa-instagram"
                           href="https://instagram.com/dadhichtechnologies"
-                        ></a>
+                        >
+                        <BsInstagram className="fa fa-instagram" aria-hidden="true"></BsInstagram>
+                        </a>
                       </li>
                       {/* <li>
 												<a className="fa fa-envelope gradient text-white" href="mailto:max.Info@DadhichTechnologies.com"></a>
 												 <span>Info@DadhichTechnologies.com</span> 
 											</li> */}
 											<li>
-												<a className="fa fa-envelope gradient text-white" href="mailto:max.Info@DadhichTechnologies.com"></a>
-												{/* <span>Info@DadhichTechnologies.com</span> */}
+												<a className="linkedin" href="mailto:max.Info@DadhichTechnologies.com"><HiOutlineMail className="fa fa-envelope gradient text-white"></HiOutlineMail></a>
 											</li>
 
 
@@ -119,10 +124,10 @@ function Footer() {
                   <h5 className="footer-title">Other links</h5>
                   <ul>
                     <li>
-                      <Link to="#">
+                      <Link to="/Dating">
                       <div style={{display:'flex',alignItems:'baseline',gap:'5px'}}>
                         <AiOutlineSwapRight/>
-                        <a style={{padding:'0px'}}>Faq</a>
+                        <a style={{padding:'0px'}}>Dating & Matrimonial Website</a>
                         </div>
                       </Link>
                     </li>
@@ -154,7 +159,7 @@ function Footer() {
                       <Link to="/Ecom">
                       <div style={{display:'flex',alignItems:'baseline',gap:'5px'}}>
                         <AiOutlineSwapRight/>
-                        <a style={{padding:'0px'}}>E-commerce</a>
+                        <a style={{padding:'0px'}}>E-commerce Development</a>
                         </div>
                       </Link>
                     </li>
@@ -199,7 +204,7 @@ function Footer() {
             <div className="row align-items-center">
               <div className="col-md-12 text-center">
                 <span className="copyright-text">
-                  Copyright © 2022{" "}
+                  Copyright © 2021{" "}
                   <a href="https://dadhichtechnologies.com/">
                     Dadhich Technologies
                   </a>
