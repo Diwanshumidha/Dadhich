@@ -299,7 +299,7 @@ const Card = ({ name, ids , img_logo:image_link }) => {
   return (
     <div className={`${s.card} ${ids}`} id={ids} >
       {/* <Image src={img_logo} width={60} height={60}></Image> */}
-      {console.log(image_link)}
+      {/* {console.log(image_link)} */}
           <img src={image_link} width={60} height={60} alt="Image logo" />
           
       <h4>{name}</h4>

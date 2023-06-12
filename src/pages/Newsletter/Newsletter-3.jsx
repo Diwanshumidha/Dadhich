@@ -20,7 +20,7 @@ function Newsletter3() {
                 Subscribe To Our Newsletter For Latest Update Of New Products
               </h2>
             </div>
-            <div className="col-lg-5 col-md-6">
+            <div className="saifi col-lg-5 col-md-6">
               <div className="dlab-subscribe style-3 max-w500">
                 <form
                   className="dzSubscribe"
@@ -42,9 +42,9 @@ function Newsletter3() {
                           name="submit"
                           value="Submit"
                           type="submit"
-                          className="btn btn-corner gradient shadow btn-primary"
+                          className=" sartaj btn btn-corner gradient shadow btn-primary"
                         >
-                          Subscribe Now
+                          Subscribe
                         </button>
                       </div>
                     </div>
