@@ -9,88 +9,90 @@ import { address, business, camera, costumer, discount, filter, history, login, 
 // from './index';
 
 
+
 const adminfeatures = [
   {
     name: "Product Management",
-    link: "",
+    link: "../../../public/featureslogo/Admin/product-management.png",
   },
   {
     name: "Order Management",
-    link: "/images/featureslogo/icon2",
+    link: "../../../public/featureslogo/Admin/order.png",
   },
   {
     name: "Inventory Management",
-    link: "/images/featureslogo/icon3",
+    link: "../../../public/featureslogo/Admin/inventory-management.png",
   },
   {
     name: "Customer Management",
-    link: "/images/featureslogo/icon4",
+    link: "../../../public/featureslogo/Admin/costumerManagement.png",
   },
   {
     name: "Analytics and Reporting",
-    link: "/images/featureslogo/icon5",
+    link: "../../../public/featureslogo/Admin/aalystic.png",
   },
   {
     name: "Sales and Promotions",
-    link: "/images/featureslogo/icon6",
+    link: "../../../public/featureslogo/Admin/saleIncrease.png",
   },
   {
     name: "Content Management System (CMS)",
-    link: "/images/featureslogo/icon7",
+    link: "../../../public/featureslogo/Admin/content-management.png",
   },
   {
     name: "Shipping and Fulfillment",
-    link: "/images/featureslogo/icon8",
+    link: "../../../public/featureslogo/Admin/shipping.png",
   },
   {
     name: "Payment Gateway Integration",
-    link: "/images/featureslogo/icon9",
+    link: "../../../public/featureslogo/Admin/",
   },
   {
     name: "User Role and Permissions",
-    link: "/images/featureslogo/icon10",
+    link: "../../../public/featureslogo/Admin/",
   },
   {
     name: "Dashboard and Analytics",
-    link: "/images/featureslogo/icon11",
+    link: "../../../public/featureslogo/Admin/",
   },
   {
     name: "Tax Management",
-    link: "/images/featureslogo/icon12",
+    link: "../../../public/featureslogo/Admin/",
   },
   {
     name: "Multichannel Integration",
-    link: "/images/featureslogo/icon13",
+    link: "../../../public/featureslogo/Admin/",
   },
   {
     name: "Customer Support Management",
-    link: "/images/featureslogo/icon14",
+    link: "../../../public/featureslogo/Admin/",
   },
   {
     name: "Returns and Refunds Management",
-    link: "/images/featureslogo/icon15",
+    link: "../../../public/featureslogo/Admin/",
   },
   {
     name: "Marketing and SEO Tools",
-    link: "/images/featureslogo/icon16",
+    link: "../../../public/featureslogo/Admin/",
   },
   {
     name: "Product Reviews Management",
-    link: "/images/featureslogo/icon17",
+    link: "../../../public/featureslogo/Admin/",
   },
   {
     name: "Internationalization and Localization",
-    link: "/images/featureslogo/icon18",
+    link: "../../../public/featureslogo/Admin/",
   },
   {
     name: "Site Performance and Security",
-    link: "/images/featureslogo/icon19",
+    link: "../../../public/featureslogo/Admin/",
   },
   {
     name: "Third-Party Integrations",
-    link: "/images/featureslogo/icon20",
+    link: "../../../public/featureslogo/Admin/",
   },
 ];
+
 
 
 const userfeatures = [
@@ -216,7 +218,7 @@ const EUserFeature = () => {
                   <Card
                     name={item.name}
                     ids={adminfeatures.findIndex((element) => element === item)}
-                    img_logo={item.link}  key={item.link}
+                    img_logo={item.link} 
                   />
                 );
               })
@@ -224,7 +226,7 @@ const EUserFeature = () => {
                 <Card
                   name={item.name}
                   ids={userfeatures.findIndex((element) => element === item)}
-                  img_logo={item.link} key={item.link}
+                  img_logo={item.link}
                 />
               ))}
         </div>
@@ -247,7 +249,6 @@ const Card = ({ name, ids , img_logo:image_link }) => {
 };
 
 export default EUserFeature;
-
 
 
 
