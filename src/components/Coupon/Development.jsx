@@ -11,9 +11,6 @@ import img1 from '../../../public/svg/svgexport-7.svg'
 // const img1 = require('../../../public/svg/svgexport-7.svg')
 
 
-
-
-
 const Development = () => {
   return (
     <div className={s.portfolio}>

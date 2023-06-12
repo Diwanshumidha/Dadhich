@@ -1,7 +1,6 @@
 
 
 
-import React from 'react';
 import s from './Process.module.css';
 import img7 from '../../../public/svg/svgexport-13.svg';
 import img6 from '../../../public/svg/svgexport-12.svg';
@@ -17,23 +16,36 @@ const Process = () => {
     <div className={s.portfolio}>
       <div className={s.heading}>
         <span>Process</span>
-        <h2>Our Development Process</h2>
+        <h2 style={{maxWidth:'90%',textAlign:'center'}}>Our Development Process</h2>
 
         <div className={s.card_container1}>
-          <Card name='Analysis &amp; scoping sessions' count='1' imagelink={img1} cls='ana' />
-          <Card name='Prototyping &amp; specification' count='2' imagelink={img2} cls='pro' />
-          <Card name='UI Design' count='3' imagelink={img3} cls='ui'/>
-          <Card name='Development' count='4' imagelink={img4} cls='dev'/>
-          <Card name='QA(Release Beta)' count='5' imagelink={img5} cls='qa' />
-          <Card name='Launch' count='6' imagelink={img6} cls='lau'/>
-          <Card name='Support &amp; Maintenance' count='7' imagelink={img7} cls='sup' />
+          <Card
+            name="Analysis &amp; scoping sessions"
+            count="1"
+            imagelink={img1}
+            cls="ana"
+          />
+          <Card
+            name="Prototyping &amp; specification"
+            count="2"
+            imagelink={img2}
+            cls="pro"
+          />
+          <Card name="UI Design" count="3" imagelink={img3} cls="ui" />
+          <Card name="Development" count="4" imagelink={img4} cls="dev" />
+          <Card name="QA(Release Beta)" count="5" imagelink={img5} cls="qa" />
+          <Card name="Launch" count="6" imagelink={img6} cls="lau" />
+          <Card
+            name="Support &amp; Maintenance"
+            count="7"
+            imagelink={img7}
+            cls="sup"
+          />
         </div>
       </div>
     </div>
   );
-}
-
-
+};
 
 const Card = ({ name, count, imagelink, cls }) => {
   return (
@@ -49,9 +61,6 @@ const Card = ({ name, count, imagelink, cls }) => {
       </div>
     </div>
   );
-}
-
-
+};
 
 export default Process;
-

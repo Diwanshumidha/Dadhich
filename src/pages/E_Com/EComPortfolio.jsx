@@ -20,7 +20,7 @@ const EComPortfolio = ({ hidden , category='Ecom' }) => {
 
       setportfolio(response.data);
       console.log("GetPortfolio=>  ",response.data);
-      console.log("GetPortfolio=>  ",port);
+    
 
 
     } catch (error) {
@@ -69,7 +69,7 @@ const EComPortfolio = ({ hidden , category='Ecom' }) => {
                   currentcategory == "all product" ||
                   (item.category).toLowerCase() == currentcategory
                   
-                )
+                ).slice(0, 8)
               .map((item) => (
                 <Card key={item.title} title={item.title} link={item.link} category={item.category} image={item.image}></Card>
               ))}

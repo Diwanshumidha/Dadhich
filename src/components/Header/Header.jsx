@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 function Header() {
   const [show, setShow] = useState(false);
@@ -14,6 +14,9 @@ function Header() {
     });
   }, []);
 
+  const BgColor = {
+    backgroundColor: "rgba(255, 255, 25" 
+  }
   return (
     <>
       {/* <!-- Header --> */}
@@ -24,16 +27,17 @@ function Header() {
             scroll ? "is-fixed" : ""
           }`}
         >
-          <div className="main-bar clearfix ">
+          <div className="main-bar clearfix   "> 
             <div className="container clearfix">
               {/* <!-- Website Logo --> */}
-              <div className="logo-header mostion logo-dark">
+              <div className="logo-header mostion logo-dark ">
                 <Link to="/">
                   <a>
-                    <img
+                    {/* <img
                       className="custom-logo-white"
-                      style={
-                        scroll ? { display: "none" } : { display: "block" }
+                      style={ 
+                
+                        scroll ? { display: `block ${BgColor}`  } : { display: "block" }
                       }
                       src="images/logo_white.svg"
                       alt=""
@@ -43,9 +47,12 @@ function Header() {
                       style={
                         !scroll ? { display: "none" } : { display: "block" }
                       }
-                      src="images/logo_dark.svg"
+                      src="C"
                       alt=""
-                    />
+                    /> */}
+                    <img 
+                      className="custom-logo"
+                      src={scroll?"images/logo_dark.svg":"images/logo_white.svg"}/>
                   </a>
                 </Link>
               </div>
@@ -80,7 +87,7 @@ function Header() {
                 <div className="logo-header">
                   <Link to="/">
                     <a>
-                      <img src="images/logo-3.png" alt="" />
+                      <img src="images/logo_dark.svg" alt="" />
                     </a>
                   </Link>
                 </div>
@@ -90,31 +97,20 @@ function Header() {
                       <a>Home</a>
                     </Link>
                   </li>
-                  {/* <li className={`${open === "about" ? "open" : ""}`}><a  onClick={() => setOpen("about")}><span>Pages</span><i className="fa fa-chevron-down"></i></a>
-                                    <ul className="sub-menu">
-                                        
-                                       
-                                        
-										<li><Link to="/about-us-3"><a>About Us</a></Link></li>
-                                        <li><Link to="/faq-3"><a>Faq</a></Link></li>
-										<li><Link to="/pricing-table-3"><a>Pricing Table</a></Link></li>
-										<li><Link to="/team-3"><a>Team</a></Link></li>
-                                        <li><Link to="/coming-soon"><a>Coming Soon</a></Link></li>
-                                        <li><Link to="/error-404"><a>Error 404</a></Link></li>
-                                        <li><Link to="/sitedown"><a>Site Down</a></Link></li>
-                                    </ul>
-                                </li> */}
+
                   <li className={`${open === "services" ? "open" : ""}`}>
                     <a onClick={() => setOpen("services")}>
                       <span className="animate">Services</span>
-                      <i className="fa fa-chevron-down"></i>
+                      <i className="fa fa-chevron-down">
+                        <MdKeyboardArrowRight />
+                      </i>
                     </a>
                     <ul className="sub-menu">
-                      <li>
+                      {/* <li>
                         <Link to="/Business">
                           <a>Business Web Development</a>
                         </Link>
-                      </li>
+                      </li> */}
                       <li>
                         <Link to="/Ecom">
                           <a>E-commerce Website</a>
@@ -142,18 +138,7 @@ function Header() {
                       <a>Contact Us</a>
                     </Link>
                   </li>
-                  {/* <li className={`${open === "contact" ? "open" : ""}`}><a onClick={() => setOpen("contact")}><span className='animate'>Looking For</span><i className="fa fa-chevron-down"></i></a>
-                                    <ul className="sub-menu">
-										<li><Link to="#"><a>Landing Page</a></Link></li>
-										<li><Link to="#"><a>Portfolio WebSite</a></Link></li>
-										<li><Link to="#"><a>Coperate Website</a></Link></li>
-										<li><Link to="#"><a>E-Commerce Website</a></Link></li>
-										<li><Link to="#"><a>Dating-Matrimonial Website</a></Link></li>
-										<li><Link to="#"><a>Coupon & Deal Website</a></Link></li>
-										<li><Link to="#"><a>Small Business Website</a></Link></li>
-										<li><Link to="#"><a>Custom Web Development</a></Link></li>
-                                    </ul>
-                                </li> */}
+
                   <li>
                     <Link to="/blog">
                       <a>Blog</a>

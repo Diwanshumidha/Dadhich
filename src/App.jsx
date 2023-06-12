@@ -5,15 +5,18 @@ import CouponDeal from './components/Coupon/CouponDeal';
 import E_Com from './pages/E_Com/ecom';
 import Business from './components/Business/Business';
 import ContactUs from './pages/ContactUs';
-import Portfolio from './components/Portfolio/Portfolio';
+
 import Dating from './components/Dating/Dating';
 import Privacy from './components/Privacy/Privacy';
 import Term from './components/TermCondition/Term';
 import Email from './pages/Email';
+import Portfolio from './components/D_Portfolio/D_Portfolio';
 
 
 const App = () => {
   return (
+    <div>
+      {/* <Layout/> */}
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/Business' element={<Business/>}/>
@@ -27,6 +30,7 @@ const App = () => {
       <Route path='/Term' element={<Term/>} />
       <Route path='/Email' element={<Email/>} />
     </Routes>
+    </div>
   )
 }
 

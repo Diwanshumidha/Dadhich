@@ -7,7 +7,7 @@ function Counter3() {
 				<div className="col-sm-4 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
 					<div className="dlab-content-bx style-2 text-center">
 						<div className="icon-content">
-							<h2 className="counter m-b0"><Counterup count={127}/>+</h2>
+							<h2 className="counter m-b0"><Counterup count={127}/>+ <br/></h2>
 							<span className="title">Satisfied Clients</span>
 						</div>
 					</div>
@@ -15,7 +15,7 @@ function Counter3() {
 				<div className="col-sm-4 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
 					<div className="dlab-content-bx style-2 text-center">
 						<div className="icon-content">
-							<h2 className="counter m-b0"><Counterup count={320}/>+</h2>
+							<h2 className="counter m-b0"><Counterup count={320}/>+ <br/></h2>
 							<span className="title">Project Lunched</span>
 						</div>
 					</div>
@@ -23,7 +23,7 @@ function Counter3() {
 				<div className="col-sm-4 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
 					<div className="dlab-content-bx style-2 text-center">
 						<div className="icon-content">
-							<h2 className="counter m-b0"><Counterup count={5}/></h2>
+							<h2 className="counter m-b0"><Counterup count={5}/><br/></h2>
 							<span className="title">Years Completed</span>
 						</div>
 					</div>

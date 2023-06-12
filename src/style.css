@@ -3668,7 +3668,7 @@ input[type="button"].btn-block {
 .input-group > .custom-file {
   position: relative;
   flex: 1 1 auto;
-  width: 1%;
+  width: 9ch;
   margin-bottom: 0;
 }
 .input-group > .form-control + .form-control,
@@ -16741,16 +16741,16 @@ textarea {
   border-radius: 8px;
   line-height: 57px;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   transition: all 0.5s;
 }
 .dlab-accordion .card-header .dlab-title a:before {
-  content: "\e61a";
+  content: "\2716";
   color: #f01f75;
   position: absolute;
   right: 20px;
   top: 20px;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "themify";
   z-index: 99;
   opacity: 1;
@@ -16762,7 +16762,7 @@ textarea {
   color: #111942;
 }
 .dlab-accordion .card-header .dlab-title a.collapsed:after {
-  content: "\e61a";
+  content: "\2716";
   color: #fff;
   background-image: var(--gradient);
   background-size: 200%;
@@ -16785,11 +16785,11 @@ textarea {
   right: 5px;
   top: 6px;
   line-height: 40px;
-  font-size: 20px;
+  font-size: 13px;
   background-color: #fff;
 }
 .dlab-accordion.accordion-sm .card-header .dlab-title a:before {
-  right: 14px;
+  right: 18px;
   top: 14px;
   font-size: 20px;
 }
@@ -17704,6 +17704,20 @@ ul.primary li:before {
   }
 }
 
+@media only screen and (max-width: 1199px) {
+   .section_heading{
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .section_heading{
+    font-size: 16px;
+  }
+  .section_heading{
+    font-size: 32px;
+  }
+}
+
 button.scroltop {
   box-shadow: -4px 4px 24px -10px #f01f75 !important;
   background: #f01f75;
@@ -17922,6 +17936,7 @@ button.scroltop {
   position: relative;
   background-position: bottom, top;
   background-repeat: no-repeat;
+  width:  100%;
 }
 .banner-three:after {
   background-image: url(.././public/images/main-slider/slider3/pic2.png);
@@ -17976,7 +17991,7 @@ button.scroltop {
     background-position: -280px bottom;
   }
   .banner-three .banner-content h1 {
-    font-size: 42px;
+    font-size: 2.2rem;
   }
   .banner-three .banner-inner {
     padding-top: 150px;
@@ -18002,6 +18017,20 @@ button.scroltop {
     padding-top: 130px;
   }
 }
+
+
+@media only screen and (min-width: 375px) {
+  .rizwan{
+  font-size: 2.2;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .rizwan{
+  font-size: 2.2;
+  }
+}
+
 
 /* Light Gallery */
 .lg-actions .lg-next,
@@ -20739,12 +20768,12 @@ icon-bx-wraper style-4:hover .icon-cell i,
 .breadcrumb-row ul li a {
   color: #fff;
 }
-.breadcrumb-row ul .breadcrumb-item + .breadcrumb-item::before {
+/* .breadcrumb-row ul .breadcrumb-item + .breadcrumb-item::before {
   content: "\f054";
   color: #fff;
   font-family: fontawesome;
   font-size: 14px;
-}
+} */
 .breadcrumb-row.style-1 .breadcrumb {
   background-image: var(--gradient);
   background-size: 200%;
@@ -21004,15 +21033,15 @@ footer .widget_services ul li a:hover {
 footer .widget_services.style-1 ul li a {
   padding: 5px 0 5px 15px;
 }
-footer .widget_services.style-1 ul li a:before {
-  content: "\f105";
+/* footer .widget_services.style-1 ul li a:before {
+  content: "\f015 ";
   font-family: fontawesome;
   left: 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   color: #fff !important;
-}
+} */
 footer .widget_getintuch ul li {
   position: relative;
   padding: 8px 0;
@@ -21235,18 +21264,25 @@ footer .widget_getintuch ul li i {
   color: white;
 }
 
+
+
+
+
+
 /* Business Section */
 
 .business_section {
   width: 100vw;
   min-height: 100vh;
   /* background: green; */
-  background-image: url(https://i.ibb.co/ScmfTd5/bg1.jpg), var(--gradient-sec);
+  /* background-image:  var(--gradient-sec); */
+  background-image:  url(images/background/bg5.png), url(images/background/bg6.png), var(--gradient-sec);
   background-position: center;
   background-repeat: none;
   background-size: cover;
   display: flex;
   justify-content: center;
+
 }
 
 .heading {
@@ -21254,18 +21290,22 @@ footer .widget_getintuch ul li i {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   color: white;
   flex-direction: column;
   gap: 2rem;
 }
 
 .main_heading {
-  text-align: center;
+  text-align: left;
   color: white;
+  
+  font-size: 3rem;
+
+  
 }
 .para {
-  text-align: center;
+  text-align: left;
 }
 
 .heading div {
@@ -21300,6 +21340,38 @@ footer .widget_getintuch ul li i {
     #ef146e 0,
     #fea958 100%
   ) !important;
+}
+
+
+
+/* Media queries for iPhone 375 X 667 */
+
+@media only screen and (max-width: 375px) {
+  .heading {
+    max-width: 90%;
+  }
+
+  .business_btn .fa {
+    font-size: 16px;
+  }
+
+  .main_heading {
+    text-align: left;
+    color: white;
+    font-size: 2.5rem;
+   
+  }
+  .para {
+    text-align: center;
+  }
+  
+  .heading div {
+    display: flex;
+    gap: 3rem;
+    
+    /* margin-top: 2rem; */
+  }
+
 }
 
 .checkbox {
