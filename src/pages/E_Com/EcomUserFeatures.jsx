@@ -8,12 +8,189 @@ import {addtocart, address, business, camera, costumer, discount, filter, histor
 
 
 
+// const adminfeatures = [
+//   {
+//     name: "Product Management",
+//     link: "../../../public/featureslogo/Admin/product-management.png",
+//   },
+//   {
+//     name: "Order Management",
+//     link: "../../../public/featureslogo/Admin/order.png",
+
+
+// const userfeatures = [
+//   {
+//     name: "Product Search",
+//     link: productsearch,
+//   },
+//   {
+//     name: "Advanced Filtering",
+//     link: filter,
+//   },
+//   {
+//     name: "Product Images",
+//     link: product,
+//   },
+//   {
+//     name: "Product Descriptions",
+//     link: camera,
+//   },
+//   {
+//     name: "Product Reviews and Ratings",
+//     link: review,
+//   },
+//   {
+//     name: "Shopping Cart",
+//     link: addtocart,
+//   },
+//   {
+//     name: "Secure Checkout",
+//     link: secure,
+//   },
+//   {
+//     name: "Order Tracking",
+//     link: track,
+//   },
+//   {
+//     name: "User Accounts",
+//     link: login,
+//   },
+//   {
+//     name: "Wishlists",
+//     link: wishlist,
+//   },
+//   {
+//     name: "Discounts and Promotions",
+//     link: discount,
+//   },
+//   {
+//     name: "Related Products",
+//     link: related,
+//   },
+//   {
+//     name: "Social Media Integration",
+//     link: news,
+//   },
+//   {
+//     name: "Customer Support",
+//     link: costumer,
+//   },
+//   {
+//     name: "Returns and Refunds",
+//     link: returns,
+//   },
+//   {
+//     name: "Order History",
+//     link: history,
+//   },
+//   {
+//     name: "Account Security",
+//     link: secure,
+//   },
+//   {
+//     name: "Mobile Responsiveness",
+//     link: mobile,
+//   },
+//   {
+//     name: "Newsletter Subscription",
+//     link: business,
+//   },
+//   {
+//     name: "Loyalty Programs",
+//     link: loyalty,
+//   },
+// ];
+
+
+const adminfeatures = [
+  {
+    name: "Product Management",
+    link: ProductManagement,
+  },
+  {
+    name: "Order Management",
+    link: business,
+  },
+  {
+    name: "Inventory Management",
+    link: "../../../public/featureslogo/Admin/inventory-management.png",
+  },
+  {
+    name: "Customer Management",
+    link: "../../../public/featureslogo/Admin/costumerManagement.png",
+  },
+  {
+    name: "Analytics and Reporting",
+    link: "../../../public/featureslogo/Admin/aalystic.png",
+  },
+  {
+    name: "Sales and Promotions",
+    link: "../../../public/featureslogo/Admin/saleIncrease.png",
+  },
+  {
+    name: "Content Management System (CMS)",
+    link: "../../../public/featureslogo/Admin/content-management.png",
+  },
+  {
+    name: "Shipping and Fulfillment",
+    link: "../../../public/featureslogo/Admin/shipping.png",
+  },
+  {
+    name: "Payment Gateway Integration",
+    link: "../../../public/featureslogo/Admin/",
+  },
+  {
+    name: "User Role and Permissions",
+    link: "../../../public/featureslogo/Admin/",
+  },
+  {
+    name: "Dashboard and Analytics",
+    link: "../../../public/featureslogo/Admin/",
+  },
+  {
+    name: "Tax Management",
+    link: "../../../public/featureslogo/Admin/",
+  },
+  {
+    name: "Multichannel Integration",
+    link: "../../../public/featureslogo/Admin/",
+  },
+  {
+    name: "Customer Support Management",
+    link: "../../../public/featureslogo/Admin/",
+  },
+  {
+    name: "Returns and Refunds Management",
+    link: "../../../public/featureslogo/Admin/",
+  },
+  {
+    name: "Marketing and SEO Tools",
+    link: "../../../public/featureslogo/Admin/",
+  },
+  {
+    name: "Product Reviews Management",
+    link: "../../../public/featureslogo/Admin/",
+  },
+  {
+    name: "Internationalization and Localization",
+    link: "../../../public/featureslogo/Admin/",
+  },
+  {
+    name: "Site Performance and Security",
+    link: "../../../public/featureslogo/Admin/",
+  },
+  {
+    name: "Third-Party Integrations",
+    link: "../../../public/featureslogo/Admin/",
+  },
+];
+
 
 
 const userfeatures = [
   {
     name: "Product Search",
-    link: productsearch,
+    link: filter,
   },
   {
     name: "Advanced Filtering",
@@ -33,7 +210,7 @@ const userfeatures = [
   },
   {
     name: "Shopping Cart",
-    link: addtocart,
+    link: shopping,
   },
   {
     name: "Secure Checkout",
@@ -90,90 +267,6 @@ const userfeatures = [
   {
     name: "Loyalty Programs",
     link: loyalty,
-  },
-];
-
-
-const adminfeatures = [
-  {
-    name: "Product Management",
-    link: ProductManagement,
-  },
-  {
-    name: "Order Management",
-    link: business,
-  },
-  {
-    name: "Inventory Management",
-    link: "/images/featureslogo/icon3",
-  },
-  {
-    name: "Customer Management",
-    link: "/images/featureslogo/icon4",
-  },
-  {
-    name: "Analytics and Reporting",
-    link: "/images/featureslogo/icon5",
-  },
-  {
-    name: "Sales and Promotions",
-    link: "/images/featureslogo/icon6",
-  },
-  {
-    name: "Content Management System (CMS)",
-    link: "/images/featureslogo/icon7",
-  },
-  {
-    name: "Shipping and Fulfillment",
-    link: "/images/featureslogo/icon8",
-  },
-  {
-    name: "Payment Gateway Integration",
-    link: "/images/featureslogo/icon9",
-  },
-  {
-    name: "User Role and Permissions",
-    link: "/images/featureslogo/icon10",
-  },
-  {
-    name: "Dashboard and Analytics",
-    link: "/images/featureslogo/icon11",
-  },
-  {
-    name: "Tax Management",
-    link: "/images/featureslogo/icon12",
-  },
-  {
-    name: "Multichannel Integration",
-    link: "/images/featureslogo/icon13",
-  },
-  {
-    name: "Customer Support Management",
-    link: "/images/featureslogo/icon14",
-  },
-  {
-    name: "Returns and Refunds Management",
-    link: "/images/featureslogo/icon15",
-  },
-  {
-    name: "Marketing and SEO Tools",
-    link: "/images/featureslogo/icon16",
-  },
-  {
-    name: "Product Reviews Management",
-    link: "/images/featureslogo/icon17",
-  },
-  {
-    name: "Internationalization and Localization",
-    link: "/images/featureslogo/icon18",
-  },
-  {
-    name: "Site Performance and Security",
-    link: "/images/featureslogo/icon19",
-  },
-  {
-    name: "Third-Party Integrations",
-    link: "/images/featureslogo/icon20",
   },
 ];
 
@@ -248,7 +341,6 @@ const Card = ({ name, ids , img_logo:image_link }) => {
 };
 
 export default EUserFeature;
-
 
 
 
