@@ -44,9 +44,9 @@ function Speciallization() {
                     Elevate your digital presence with our expertise and watch
                     your audience fall in love at first click.
                   </p>
-                  <Link to="/services-3">
+                  <Link to="/ContactUs">
                     <a className="btn btn-outline-primary service_btn">
-                      Learn More
+                      Get Started
                     </a>
                   </Link>
                 </div>
@@ -78,9 +78,9 @@ function Speciallization() {
                     ensuring seamless user experiences across devices. Let us
                     bring your digital dreams to life.
                   </p>
-                  <Link href="/services-3">
+                  <Link to="/ContactUs">
                     <a className="btn btn-outline-primary service_btn">
-                      Learn More
+                    Get Started
                     </a>
                   </Link>
                 </div>
@@ -115,9 +115,9 @@ function Speciallization() {
                     results. Let your brand shine and soar above
                     the competition.
                   </p>
-                  <Link href="/services-3">
+                  <Link to="/ContactUs">
                     <a className="btn btn-outline-primary service_btn">
-                      Learn More
+                    Get Started
                     </a>
                   </Link>
                 </div>

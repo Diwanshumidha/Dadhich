@@ -70,10 +70,10 @@ function Header() {
               {/* <!-- Extra Nav --> */}
               <div className="extra-nav">
                 <div className="extra-cell">
-                  <Link to="/contact">
+                  <Link to="/ContactUs">
                     <a className="btn btn-corner gradient btn-primary">
                       <div className="fa fa-angle-right m-r10"></div>
-                      Get A Quote
+                     <b>Get A Quote</b> 
                     </a>
                   </Link>
                 </div>

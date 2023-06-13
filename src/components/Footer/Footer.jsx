@@ -95,9 +95,9 @@ function Footer() {
 								<div className="widget widget_services style-1">
 									<h5 className="footer-title">Our links</h5>
 									<ul>
-										<li><Link to="#"><a>Home</a></Link></li>
-										<li><Link to="/about"><a>About Us</a></Link></li>
-										<li><Link to="/service"><a>Services</a></Link></li>
+										<li><Link to="/"><a>Home</a></Link></li>
+										<li><Link to="/AboutUs"><a>About Us</a></Link></li>
+										<li><Link to="/Service"><a>Services</a></Link></li>
 										<li><Link to="/Email"><a>Contact Us</a></Link></li>
 										<li><Link to="/blog"><a>Blog</a></Link></li>
 									</ul>
