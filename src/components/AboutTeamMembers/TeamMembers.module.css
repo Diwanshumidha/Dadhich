@@ -1,3 +1,29 @@
 .head{
     width: 400px;
 }
+
+.responsive {
+    /* Styles for both laptop and phone */
+  }
+  
+  section.laptop {
+    /* Styles for laptop */
+    display: block;
+  }
+  
+  section.phone {
+    /* Styles for phone */
+    display: none;
+  }
+  
+  /* Media query for phone */
+  @media (max-width: 768px) {
+    section.laptop {
+      display: none;
+    }
+  
+    section.phone {
+      display: block;
+    }
+  }
+  

@@ -18042,6 +18042,16 @@ button.scroltop {
   font-size: 2.2;
   }
 }
+@media only screen and (max-width: 575px) {
+  #working{
+  font-size: 25px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .done{
+  font-size: 40px;
+  }
+}
 
 .linkedin{
   padding: 15px;
