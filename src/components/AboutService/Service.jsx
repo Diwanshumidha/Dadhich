@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 // import TestimonialSlider4 from "../component/TestimonialSlider-4";
 
-function Service3() {
+function Service() {
   const [open, setOpen] = useState("p2");
   return (
     <>
@@ -128,4 +128,4 @@ function Service3() {
   );
 }
 
-export default Service3;
+export default Service;

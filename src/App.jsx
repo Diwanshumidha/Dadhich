@@ -11,12 +11,15 @@ import Term from './components/TermCondition/Term';
 import Email from './pages/Email';
 import Portfolio from './components/D_Portfolio/D_Portfolio';
 import GetInTouch from './pages/GetInTouch';
+import AboutUs from './components/AboutUs/AboutUs';
+import Service from './components/AboutService/Service';
+import Layout from './components/HOC/Layout';
 
 
 const App = () => {
   return (
     <div>
-      {/* <Layout/> */}
+      <Layout/>
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/Business' element={<Business/>}/>
@@ -30,6 +33,8 @@ const App = () => {
       <Route path='/Term' element={<Term/>} />
       <Route path='/Email' element={<Email/>} />
       <Route path='/GetInTouch' element={<GetInTouch/>} />
+      <Route path='/AboutUs' element={<AboutUs/>} />
+      <Route path='/Service' element={<Service/>} />
     </Routes>
     </div>
   )

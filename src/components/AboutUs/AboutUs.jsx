@@ -10,7 +10,7 @@ import AboutUs3 from "./AboutUs-3";
 import ClientSlider from "../ClientSlider/Clients-3";
 import Testimonial3 from "../AboutTestimonials/Testimonial-3";
 
-import AboutService from "../AboutService/Service-3";
+import AboutService from "../AboutService/Service";
 
 function AboutUs() {
   const [isOpen, setOpen] = useState(false);

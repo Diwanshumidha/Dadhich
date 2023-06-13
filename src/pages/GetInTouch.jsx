@@ -21,10 +21,10 @@ function GetInTouch() {
                                 </div>
                                 <div className=".dlab-social-icon contact_dlab">
                                     <h5 style={{ "margin-bottom": "40px", "margin-right": "10px" }}>Reach Us On -</h5>
-                                    <a className="fa fa-whatsapp con_whatsapp" style={{display:'flex',justifyContent:'center',alignItems:'center'}} href="https://twitter.com/login?lang=en">
+                                    <a className="fa fa-whatsapp con_whatsapp" style={{display:'flex',justifyContent:'center',alignItems:'center'}} href="https://wa.me/+918696219723">
                                         <AiOutlineWhatsApp/>
                                     </a>
-                                    <a className="fa fa-skype con_whatsapp" style={{display:'flex',justifyContent:'center',alignItems:'center'}} href="https://twitter.com/login?lang=en">
+                                    <a className="fa fa-skype con_whatsapp" style={{display:'flex',justifyContent:'center',alignItems:'center'}} href="https://www.skype.com/dadhichtechnologies.com">
                                         <BsSkype/>
                                     </a>
 
