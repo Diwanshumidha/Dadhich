@@ -1,3 +1,23 @@
 .head{
     width: 400px;
 }
+
+.slide {
+    @media (max-width: 375px) {
+      width: 90% !important;
+      align-items: center;
+      align-content: center;
+      position: relative;
+      left: 1rem;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .divImg {
+      width: 1rem;
+      height: 0.5rem;
+    }
+  }
+  
+  
+

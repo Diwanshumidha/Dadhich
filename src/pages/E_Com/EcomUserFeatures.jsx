@@ -1,23 +1,115 @@
-
-// import { Carousel } from 'react-responsive';
 import s from "./EcomUserFeatures.module.css";
 import img_logo from "../../../public/svg/svgexport-12.svg";
 
 import { useState } from "react";
-import { address, business, camera, costumer, discount, filter, history, login, loyalty, mobile, news, product, question, related, returns, review, secure, shopping, track, wishlist } from '../../../public/featureslogo/User'
+import {addtocart, address, business, camera, costumer, discount, filter, history, login, loyalty, mobile, news, product, question, related, returns, review, secure, shopping, track, wishlist,productsearch,ProductManagement } from '../../../public/featureslogo/User'
 // import {address,business,camera,costumer,discount,filter,history,login,loyalty,mobile,news,question,related,returns,review,secure,shoping,track,Wishlists,process}
 // from './index';
 
 
 
+// const adminfeatures = [
+//   {
+//     name: "Product Management",
+//     link: "../../../public/featureslogo/Admin/product-management.png",
+//   },
+//   {
+//     name: "Order Management",
+//     link: "../../../public/featureslogo/Admin/order.png",
+
+
+// const userfeatures = [
+//   {
+//     name: "Product Search",
+//     link: productsearch,
+//   },
+//   {
+//     name: "Advanced Filtering",
+//     link: filter,
+//   },
+//   {
+//     name: "Product Images",
+//     link: product,
+//   },
+//   {
+//     name: "Product Descriptions",
+//     link: camera,
+//   },
+//   {
+//     name: "Product Reviews and Ratings",
+//     link: review,
+//   },
+//   {
+//     name: "Shopping Cart",
+//     link: addtocart,
+//   },
+//   {
+//     name: "Secure Checkout",
+//     link: secure,
+//   },
+//   {
+//     name: "Order Tracking",
+//     link: track,
+//   },
+//   {
+//     name: "User Accounts",
+//     link: login,
+//   },
+//   {
+//     name: "Wishlists",
+//     link: wishlist,
+//   },
+//   {
+//     name: "Discounts and Promotions",
+//     link: discount,
+//   },
+//   {
+//     name: "Related Products",
+//     link: related,
+//   },
+//   {
+//     name: "Social Media Integration",
+//     link: news,
+//   },
+//   {
+//     name: "Customer Support",
+//     link: costumer,
+//   },
+//   {
+//     name: "Returns and Refunds",
+//     link: returns,
+//   },
+//   {
+//     name: "Order History",
+//     link: history,
+//   },
+//   {
+//     name: "Account Security",
+//     link: secure,
+//   },
+//   {
+//     name: "Mobile Responsiveness",
+//     link: mobile,
+//   },
+//   {
+//     name: "Newsletter Subscription",
+//     link: business,
+//   },
+//   {
+//     name: "Loyalty Programs",
+//     link: loyalty,
+//   },
+// ];
+
+
 const adminfeatures = [
   {
     name: "Product Management",
-    link: "../../../public/featureslogo/Admin/product-management.png",
+    link: ProductManagement,
   },
   {
     name: "Order Management",
-    link: "../../../public/featureslogo/Admin/order.png",
+    link: business,
   },
   {
     name: "Inventory Management",
@@ -217,16 +309,16 @@ const EUserFeature = () => {
                 return (
                   <Card
                     name={item.name}
-                    ids={adminfeatures.findIndex((element) => element === item)}
-                    img_logo={item.link} 
+                    ids={userfeatures.findIndex((element) => element === item)}
+                    img_logo={item.link}  
                   />
                 );
               })
             : dispayedadmin.map((item) => (
                 <Card
                   name={item.name}
-                  ids={userfeatures.findIndex((element) => element === item)}
-                  img_logo={item.link}
+                  ids={adminfeatures .findIndex((element) => element === item)}
+                  img_logo={item.link} 
                 />
               ))}
         </div>
