@@ -1,6 +1,5 @@
 import React from "react";
-
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import Header from "../../components/Header/Header";
 import Process from "../../components/Process/Process";
 import OurFeatures from "../OurFeatures/OurFeatures";
@@ -153,13 +152,13 @@ const E_Com = () => {
       </div>
       <OurFeatures />
 
-      <EComPortfolio hidden={true} category="ecom" />
+      <EComPortfolio hidden={true} category='ecom'/>
+      {/* <EUserFeature hidden={true} category='ecom'/> */}
+      <Process/>
       <EUserFeature/>
-     
-      <Process />
-      <FaqEcom />
-      <GetInTouch />
-      <Footer />
+      <FaqEcom/>
+      <GetInTouch/>
+      <Footer/>
     </>
   );
 };

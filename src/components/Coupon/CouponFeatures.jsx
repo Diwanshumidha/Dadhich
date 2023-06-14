@@ -1,233 +1,236 @@
 import React from "react";
 // import { Carousel } from 'react-responsive';
 import s from "../Coupon/css/CouponFeatures.module.css";
-import img_logo from "../../../public/svg/svgexport-12.svg";
+// import img_logo from "../../../public/svg/svgexport-12.svg";
 import { useState } from "react";
+
+import { addtocart,alert,browser,calculator,cashback,compare,coupon,daily,deal,email,excusive,expired,feature,language,location,offer,optimization,personalization,printer,profile,reviews,search,share,socialmedia,store,update,vote,vaucher } from "./Features/User";
+import { addvertise,affiliat,analytics,approved,calender,cashless,category,communication,creater,feedback,help,lifestyle,management,newsletter,performance,restore,secure,seo,ui } from "./Features/User";
 
 
 const userfeatures = [
   {
     name: "Search Functionality",
-    link: "address",
+    link: search,
   },
   {
     name: "Deal Categories",
-    link: "filter",
+    link: deal,
   },
   {
     name: "Featured Deals",
-    link: "/images/featureslogo/icon23",
+    link: feature,
   },
   {
     name: "Exclusive Offers",
-    link: "/images/featureslogo/icon24",
+    link: excusive,
   },
   {
     name: "Coupon Codes",
-    link: "/images/featureslogo/icon25",
+    link: coupon,
   },
   {
     name: "Printable Coupons",
-    link: "/images/featureslogo/icon26",
+    link: coupon,
   },
   {
     name: "Email Subscriptions",
-    link: "/images/featureslogo/icon27",
+    link: email,
   },
   {
     name: "User Accounts",
-    link: "/images/featureslogo/icon28",
+    link: profile,
   },
   {
     name: "Social Media Integration",
-    link: "/images/featureslogo/icon29",
+    link: socialmedia,
   },
   {
     name: "User Reviews and Ratings",
-    link: "/images/featureslogo/icon30",
+    link: reviews,
   },
   {
     name: "Expiration Dates",
-    link: "/images/featureslogo/icon31",
+    link: expired,
   },
   {
     name: "Deal Alerts",
-    link: "/images/featureslogo/icon32",
+    link: deal,
   },
   {
     name: "Savings Calculators",
-    link: "/images/featureslogo/icon33",
+    link: calculator,
   },
   {
     name: "Store Pages",
-    link: "/images/featureslogo/icon34",
+    link: store,
   },
   {
     name: "Mobile Optimization",
-    link: "/images/featureslogo/icon35",
+    link: optimization,
   },
   {
     name: "Location-Based Deals",
-    link: "/images/featureslogo/icon36",
+    link: location,
   },
   {
     name: "Coupon Printing",
-    link: "/images/featureslogo/icon37",
+    link: coupon,
   },
   {
     name: "Deal Exclusivity",
-    link: "/images/featureslogo/icon38",
+    link: excusive,
   },
   {
     name: "Deal Voting and Ranking",
-    link: "/images/featureslogo/icon39",
+    link: vote,
   },
   {
     name: "Price Comparison",
-    link: "/images/featureslogo/icon40",
+    link: compare,
   },
   {
     name: "Cashback Offers",
-    link: "/images/featureslogo/icon40",
+    link: cashback,
   },
   {
     name: "Daily Deals",
-    link: "/images/featureslogo/icon40",
+    link: daily,
   },
   {
     name: "Automatic Deal Updates",
-    link: "/images/featureslogo/icon40",
+    link: update,
   },
   {
     name: "Deal Sharing",
-    link: "/images/featureslogo/icon40",
+    link: share,
   },
   {
     name: "Wishlist and Save for Later",
-    link: "/images/featureslogo/icon40",
+    link: addtocart,
   },
   {
     name: "Browser Extensions",
-    link: "/images/featureslogo/icon40",
+    link: browser,
   },
   {
     name: "Personalized Recommendation",
-    link: "/images/featureslogo/icon40",
+    link: personalization,
   },
   {
     name: "Multi-Language Support",
-    link: "/images/featureslogo/icon40",
+    link: language,
   },
 ];
 
 const adminfeatures = [
   {
     name: "Auto Coupon Import",
-    link: "",
+    link: coupon,
   },
   {
     name: "Frontend Deal Submission ",
-    link: "/images/featureslogo/icon2",
+    link: deal,
   },
   {
     name: "User Management",
-    link: "/images/featureslogo/icon3",
+    link: management,
   },
   {
     name: "Coupon/Deal Management",
-    link: "/images/featureslogo/icon4",
+    link: deal,
   },
   {
     name: "Category Management",
-    link: "/images/featureslogo/icon5",
+    link: category,
   },
   {
     name: "Store Management",
-    link: "/images/featureslogo/icon6",
+    link: store,
   },
   {
     name: "Featured Deals Management",
-    link: "/images/featureslogo/icon7",
+    link: feature,
   },
   {
     name: "Expiry Management",
-    link: "/images/featureslogo/icon8",
+    link: expired,
   },
   {
     name: "Deal Approval",
-    link: "/images/featureslogo/icon9",
+    link: approved,
   },
   {
     name: "User Feedback Management",
-    link: "/images/featureslogo/icon10",
+    link: feedback,
   },
   {
     name: "Analytics and Reporting",
-    link: "/images/featureslogo/icon11",
+    link: analytics,
   },
   {
     name: "Advertising and Promotion",
-    link: "/images/featureslogo/icon12",
+    link: addvertise,
   },
   {
     name: "Newsletter Management",
-    link: "/images/featureslogo/icon13",
+    link: newsletter,
   },
   {
     name: "Search Engine Optimization (SEO)",
-    link: "/images/featureslogo/icon14",
+    link: seo,
   },
   {
     name: "Social Media Integration",
-    link: "/images/featureslogo/icon15",
+    link: search,
   },
   {
     name: "Coupon Printing Management",
-    link: "/images/featureslogo/icon16",
+    link: printer,
   },
   {
     name: "User Communication",
-    link: "/images/featureslogo/icon17",
+    link: communication,
   },
   {
     name: "Affiliate Management",
-    link: "/images/featureslogo/icon18",
+    link: affiliat,
   },
   {
     name: "Content Management System (CMS)",
-    link: "/images/featureslogo/icon19",
+    link: management,
   },
   {
     name: "Deal Scheduling",
-    link: "/images/featureslogo/icon20",
+    link: calender,
   },
   {
     name: "Discount Rules and Restrictions",
-    link: "/images/featureslogo/icon20",
+    link: offer,
   },
   {
     name: "User Activity Tracking",
-    link: "/images/featureslogo/icon20",
+    link: lifestyle,
   },
   {
     name: "Backup and Restore",
-    link: "/images/featureslogo/icon20",
+    link: restore,
   },
   {
     name: "Security and Access Control",
-    link: "/images/featureslogo/icon20",
+    link: secure,
   },
   {
     name: "Payment Integration",
-    link: "/images/featureslogo/icon20",
+    link: cashless,
   },
   {
     name: "Performance Optimization",
-    link: "/images/featureslogo/icon20",
+    link: performance,
   },
   {
     name: "Help and Documentation",
-    link: "/images/featureslogo/icon20",
+    link: help,
   },
 ];
 
@@ -258,7 +261,7 @@ const CouponFeatures = () => {
         <h2>Top Features</h2>
         <div className={`radio_inputs ${s.toggle}`}>
           <label className="radio" htmlFor="rad1">
-            <input type="radio" name="radio" id="rad1" checked={checked === 'user'} onChange={() => handleChange('user')} />
+            <input type="radio" name="radio" id="rad1" checked={checked === 'user'} onChange={() => handleChange('user')}/>
             <span className="name" >User</span>
           </label>
           <label className="radio" htmlFor="rad2">
@@ -269,36 +272,36 @@ const CouponFeatures = () => {
 
         <div className={s.card_container}>
           {checked === 'user'
-            ? dispayeduser.map((item) => {
-              return (
+            ? dispayeduser.map((item ) => {
+                return (
+                  <Card
+                    name={item.name}
+                    ids={userfeatures.findIndex((element) => element === item)}
+                    img_logo={item.link}  
+                  />
+                );
+              })
+            : dispayedadmin.map((item) => (
                 <Card
                   name={item.name}
-                  ids={adminfeatures.findIndex((element) => element === item)}
-                  img_logo={item.link}
+                  ids={adminfeatures .findIndex((element) => element === item)}
+                  img_logo={item.link} 
                 />
-              );
-            })
-            : dispayedadmin.map((item) => (
-              <Card
-                name={item.name}
-                ids={userfeatures.findIndex((element) => element === item)}
-                img_logo={item.link}
-              />
-            ))}
+              ))}
         </div>
-        <button onClick={handleExpandClick}>More Features</button>
+        <button onClick={handleExpandClick}>{!expanded?'More Features':'Show Less'}</button>
       </div>
     </section>
   );
 };
 
-const Card = ({ name, ids }) => {
+const Card = ({ name, ids , img_logo:image_link }) => {
   return (
-    <div className={`${s.card} ${ids}`} id={ids}>
+    <div className={`${s.card} ${ids}`} id={ids} >
       {/* <Image src={img_logo} width={60} height={60}></Image> */}
-      {/* <Carousel> */}
-        <img src={img_logo} alt="Image logo" width={60} height={60} />
-      {/* </Carousel> */}
+      {/* {console.log(image_link)} */}
+          <img src={image_link} width={60} height={60} alt="Image logo" />
+          
       <h4>{name}</h4>
     </div>
   );

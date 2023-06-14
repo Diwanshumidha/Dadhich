@@ -35,7 +35,7 @@ function TestimonialSlider3() {
       >
         <SwiperSlide className="item">
           <div className="testimonial-2">
-            <div className="testimonial-pic quote-right">
+            <div className="testimonial-pic ">
               <img src="images/testimonials/JoshuaSophy.jpeg" alt="" />
             </div>
             <div className="testimonial-text">
@@ -54,7 +54,7 @@ function TestimonialSlider3() {
         </SwiperSlide>
         <SwiperSlide className="item">
           <div className="testimonial-2">
-            <div className="testimonial-pic quote-right">
+            <div className="testimonial-pic ">
               <img src="images/testimonials/FinCross.jpeg" alt="" />
             </div>
             <div className="testimonial-text">
@@ -68,8 +68,8 @@ function TestimonialSlider3() {
         </SwiperSlide>
         <SwiperSlide className="item">
           <div className="testimonial-2">
-            <div className="testimonial-pic quote-right">
-              <img src="images/testimonials/McFarland.jpeg" alt="" />
+            <div className="testimonial-pic ">
+              <img src="images/testimonials/MichealMcFarland.jpeg" alt="" />
             </div>
             <div className="testimonial-text">
               <p className="white">
@@ -85,11 +85,12 @@ function TestimonialSlider3() {
         </SwiperSlide>
         <SwiperSlide className="item">
           <div className="testimonial-2">
-            <div className="testimonial-pic quote-right">
+            <div className="testimonial-pic ">
               <img src="images/testimonials/Kenyeben.jpeg" alt="" />
             </div>
             <div className="testimonial-text">
               <p className="white">
+             
                 He is very detailed on making sure that everything exceeds my
                 expectations. I have worked with him before and will work with
                 him again.

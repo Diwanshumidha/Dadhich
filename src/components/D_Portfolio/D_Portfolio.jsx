@@ -3,7 +3,7 @@ import s from "./d_portfolio.module.css";
 import Card from "./Card";
 import axios from "axios";
 
-const D_Portfolio = ({ hidden, category }) => {
+const Portfolio = ({ hidden, category }) => {
   const [currentCategory, setCurrentCategory] = useState(category);
   const [portfolio, setPortfolio] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -87,4 +87,4 @@ const D_Portfolio = ({ hidden, category }) => {
   );
 };
 
-export default D_Portfolio;
+export default Portfolio;

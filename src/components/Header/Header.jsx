@@ -70,10 +70,10 @@ function Header() {
               {/* <!-- Extra Nav --> */}
               <div className="extra-nav">
                 <div className="extra-cell">
-                  <Link to="/contact">
+                  <Link to="/ContactUs">
                     <a className="btn btn-corner gradient btn-primary">
                       <div className="fa fa-angle-right m-r10"></div>
-                      Get A Quote
+                     <b>Get A Quote</b> 
                     </a>
                   </Link>
                 </div>
@@ -100,7 +100,7 @@ function Header() {
 
                   <li className={`${open === "services" ? "open" : ""}`}>
                     <a onClick={() => setOpen("services")}>
-                      <span className="animate">Services</span>
+                      <span className="animate ahmad">Services</span>
                       <i className="fa fa-chevron-down">
                         <MdKeyboardArrowRight />
                       </i>
@@ -112,7 +112,9 @@ function Header() {
                         </Link>
                       </li> */}
                       <li>
+                      
                         <Link to="/Ecom">
+                          
                           <a>E-commerce Website</a>
                         </Link>
                       </li>
@@ -139,11 +141,11 @@ function Header() {
                     </Link>
                   </li>
 
-                  <li>
+                  {/* <li>
                     <Link to="/blog">
                       <a>Blog</a>
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
                 <div className="dlab-social-icon">
                   <ul>
@@ -173,3 +175,6 @@ function Header() {
 }
 
 export default Header;
+
+
+
