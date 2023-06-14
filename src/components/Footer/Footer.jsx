@@ -38,7 +38,7 @@ function Footer() {
                     dreams become awe-inspiring realities.
                     <br />
                     <br />
-                    Let's craft a digital masterpiece together.
+                    Let's craft a digital masterpiece together.
                   </p>
                   <div className="dlab-social-icon">
                     <ul>
