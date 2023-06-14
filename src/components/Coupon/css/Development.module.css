@@ -15,6 +15,8 @@
 .heading h2{
     position: relative;
     display: block;
+    /* padding-bottom: 2rem; */
+    line-height: 4rem;
 }
 
 .heading h2::after{
@@ -41,12 +43,16 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 4rem;
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
+    margin: 1rem;
 }
 
 .card_container1 > *{
-    flex: 1 1 170px;
+    flex: 1 1 100px;
+    margin: 10px;
 }
+
+
 
 
 
@@ -125,3 +131,15 @@
     font-weight: 700;
     margin: 0;
 }
+
+
+
+
+
+
+
+
+
+
+  
+  

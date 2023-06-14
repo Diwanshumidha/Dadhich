@@ -1,6 +1,7 @@
 import React from "react";
 import s from "./css/Portfolio.module.css";
 import Card from "./Card/Card";
+import { motion } from "framer-motion";
 
 
 const buttons = [
@@ -22,39 +23,50 @@ const CouponPortfolio = ({ hidden }) => {
   return (
     <>
       {/* <Header3 /> */}
-    
+
       <div className={s.d_portfolio}>
         <div className={s.d_heading}>
           {/* <span>Our Creative Work</span> */}
-          <h1 className={s.yes}></h1>
+          <motion.h1 className={s.yes}
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.5 }}
+          >Portfolio</motion.h1>
           {/* <span>
           Now, We show you our some latest and finest projects of our company.
           These all peerless projects boom in online marketing with highly rated
           features. Let's see these outstanding projects.
-        </span> */}
+          </span> */}
           {
             !hidden ?
-              <div className={`${s.filter_button} container`}>
+              <motion.div className={`${s.filter_button} container`}
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1.5 }}
+              >
                 {buttons.map((name) => (
                   <button id={name}>{name}</button>
                 ))}
-              </div>
+              </motion.div>
               : <></>
 
           }
           <div className={s.portfolio}>
-            <div className={`${s.card_container}`}>
-              <Card/>
-              <Card/>
-              <Card/>
-              <Card/>
-              <Card/>
-              <Card/>
-              <Card/>
-              <Card/>
+            <motion.div className={`${s.card_container}`}
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 1.5 }}>
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
               {/* <Link href="/about"><a><Card/></a></Link> */}
 
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

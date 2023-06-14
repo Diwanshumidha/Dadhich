@@ -5,6 +5,7 @@
 // import Link from 'next/link';
 import { Link } from "react-router-dom";
 import DatingAccordion from "./DatingAccordion";
+import { motion } from "framer-motion";
 // import AccordonDuplicate from "./AccordonDuplicate";
 // import DatingAccordion from "./DatingAccordion";
 
@@ -18,9 +19,13 @@ function DatingFAQ() {
         {/* <!-- Faq --> */}
         <section className="content-inner">
           <div className="container">
-            <div className="align-items-center faq_heading">
+            <motion.div className="align-items-center faq_heading"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            >
               <h2>Frequently Asked Questions</h2>
-            </div>
+            </motion.div>
             <div className="row align-items-center">
               <div
                 className="col-lg-12 wow fadeIn"

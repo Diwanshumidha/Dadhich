@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 
 
@@ -5,7 +6,7 @@ function DatingAccordion() {
     const [activeDefault, setActiveDefault] = useState(0);
     const defaultAccordion = [
         {
-            title: "Q:Offer??",
+            title: "Q:What type of services your agency sffer??",
             text:
                 "A: We specialize in designing and developing custom dating and matrimonial websites tailored to your specific requirements.",
             bg: "primary",
@@ -117,7 +118,11 @@ function DatingAccordion() {
                 defaultActiveKey="0"
             >
                 {defaultAccordion.map((d, i) => (
-                    <div className="card" key={i}>
+                    <motion.div className="card" key={i}
+                    initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}
+                    >
                         <div
                             eventKey={`${i}`}
                             className="card-header"
@@ -157,7 +162,7 @@ function DatingAccordion() {
                                 <p className="m-b0">{d.text}</p>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
     </>

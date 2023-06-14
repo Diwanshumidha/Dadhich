@@ -14,9 +14,7 @@ function Header() {
     });
   }, []);
 
-  const BgColor = {
-    backgroundColor: "rgba(255, 255, 25" 
-  }
+  
   return (
     <>
       {/* <!-- Header --> */}
@@ -33,23 +31,6 @@ function Header() {
               <div className="logo-header mostion logo-dark ">
                 <Link to="/">
                   <a>
-                    {/* <img
-                      className="custom-logo-white"
-                      style={ 
-                
-                        scroll ? { display: `block ${BgColor}`  } : { display: "block" }
-                      }
-                      src="images/logo_white.svg"
-                      alt=""
-                    />
-                    <img
-                      className="custom-logo"
-                      style={
-                        !scroll ? { display: "none" } : { display: "block" }
-                      }
-                      src="C"
-                      alt=""
-                    /> */}
                     <img 
                       className="custom-logo"
                       src={scroll?"images/logo_dark.svg":"images/logo_white.svg"}/>
@@ -102,7 +83,6 @@ function Header() {
                     <a onClick={() => setOpen("services")}>
                       <span className="animate ahmad">Services</span>
                       <i className="fa fa-chevron-down">
-                        <MdKeyboardArrowRight />
                       </i>
                     </a>
                     <ul className="sub-menu">
@@ -136,8 +116,8 @@ function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/ContactUs">
-                      <a>Contact Us</a>
+                    <Link to="/AboutUs">
+                      <a>About Us</a>
                     </Link>
                   </li>
 

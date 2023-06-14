@@ -1,105 +1,10 @@
 import s from "./EcomUserFeatures.module.css";
-import img_logo from "../../../public/svg/svgexport-12.svg";
+import { motion } from "framer-motion";
 
 import { useState } from "react";
 import {addtocart, address, business, camera, costumer, discount, filter, history, login, loyalty, mobile, news, product, question, related, returns, review, secure, shopping, track, wishlist,productsearch,ProductManagement } from '../../../public/featureslogo/User'
 // import {address,business,camera,costumer,discount,filter,history,login,loyalty,mobile,news,question,related,returns,review,secure,shoping,track,Wishlists,process}
 // from './index';
-
-
-
-// const adminfeatures = [
-//   {
-//     name: "Product Management",
-//     link: "../../../public/featureslogo/Admin/product-management.png",
-//   },
-//   {
-//     name: "Order Management",
-//     link: "../../../public/featureslogo/Admin/order.png",
-
-
-// const userfeatures = [
-//   {
-//     name: "Product Search",
-//     link: productsearch,
-//   },
-//   {
-//     name: "Advanced Filtering",
-//     link: filter,
-//   },
-//   {
-//     name: "Product Images",
-//     link: product,
-//   },
-//   {
-//     name: "Product Descriptions",
-//     link: camera,
-//   },
-//   {
-//     name: "Product Reviews and Ratings",
-//     link: review,
-//   },
-//   {
-//     name: "Shopping Cart",
-//     link: addtocart,
-//   },
-//   {
-//     name: "Secure Checkout",
-//     link: secure,
-//   },
-//   {
-//     name: "Order Tracking",
-//     link: track,
-//   },
-//   {
-//     name: "User Accounts",
-//     link: login,
-//   },
-//   {
-//     name: "Wishlists",
-//     link: wishlist,
-//   },
-//   {
-//     name: "Discounts and Promotions",
-//     link: discount,
-//   },
-//   {
-//     name: "Related Products",
-//     link: related,
-//   },
-//   {
-//     name: "Social Media Integration",
-//     link: news,
-//   },
-//   {
-//     name: "Customer Support",
-//     link: costumer,
-//   },
-//   {
-//     name: "Returns and Refunds",
-//     link: returns,
-//   },
-//   {
-//     name: "Order History",
-//     link: history,
-//   },
-//   {
-//     name: "Account Security",
-//     link: secure,
-//   },
-//   {
-//     name: "Mobile Responsiveness",
-//     link: mobile,
-//   },
-//   {
-//     name: "Newsletter Subscription",
-//     link: business,
-//   },
-//   {
-//     name: "Loyalty Programs",
-//     link: loyalty,
-//   },
-// ];
 
 
 const adminfeatures = [
@@ -289,10 +194,22 @@ const EUserFeature = () => {
   // console.log(dispayedadmin);
 
   return (
-    <section className={s.section}>
+    <motion.section className={s.section}
+    initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}
+    >
       <div className={`${s.container} container`}>
-        <h2>Top Features</h2>
-        <div className={`radio_inputs ${s.toggle}`}>
+        <motion.h2 
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        >Top Features</motion.h2>
+        <motion.div className={`radio_inputs ${s.toggle}`}
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        >
           <label className="radio" htmlFor="rad1">
             <input type="radio" name="radio" id="rad1" checked={checked === 'user'} onChange={() => handleChange('user')}/>
             <span className="name" >User</span>
@@ -301,9 +218,12 @@ const EUserFeature = () => {
             <input type="radio" name="radio" id="rad2" checked={checked === 'admin'} onChange={() => handleChange('admin')} />
             <span className="name" >Admin</span>
           </label>
-        </div>
+        </motion.div>
 
-        <div className={s.card_container}>
+        <motion.div className={s.card_container}
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}>
           {checked === 'user'
             ? dispayeduser.map((item ) => {
                 return (
@@ -321,10 +241,10 @@ const EUserFeature = () => {
                   img_logo={item.link} 
                 />
               ))}
-        </div>
+        </motion.div>
         <button onClick={handleExpandClick}>{!expanded?'More Features':'Show Less'}</button>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

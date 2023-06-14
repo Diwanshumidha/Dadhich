@@ -1,8 +1,9 @@
+import { motion } from "framer-motion";
 function Newsletter3() {
   return (
     <>
       {/* <!-- Newsletter --> */}
-      <section
+      <motion.section
         className="content-inner-3 wow fadeIn"
         data-wow-duration="2s"
         data-wow-delay="0.6s"
@@ -12,15 +13,26 @@ function Newsletter3() {
           backgroundSize: "cover, 200%",
           backgroundRepeat: "no-repeat",
         }}
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}
       >
         <div className="container">
           <div className="row align-items-center subscribe-wraper-1">
-            <div className="col-lg-7 col-md-6" style={{marginBottom:'1rem !important'}}>
+            <motion.div className="col-lg-7 col-md-6" style={{marginBottom:'1rem !important'}}
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            >
               <h2 className="text-white title m-b30" >
                 Subscribe To Our Newsletter For Latest Update Of New Products
               </h2>
-            </div>
-            <div className="saifi col-lg-5 col-md-6">
+            </motion.div>
+            <motion.div className="saifi col-lg-5 col-md-6"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            >
               <div className="dlab-subscribe style-3 max-w500">
                 <form
                   className="dzSubscribe"
@@ -51,10 +63,10 @@ function Newsletter3() {
                   </div>
                 </form>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }

@@ -3,19 +3,30 @@ import { Link } from "react-router-dom";
 import { FaLaptopCode } from "react-icons/fa";
 import { SlGraph } from "react-icons/sl";
 import { MdDesignServices } from "react-icons/md";
-// import TestimonialSlider4 from "../component/TestimonialSlider-4";
+import { motion } from "framer-motion";
 
 function Speciallization() {
   const [open, setOpen] = useState("p2");
   return (
     <>
       {/* <!-- Service --> */}
-      <section className="content-inner" id="service">
+      <motion.section className="content-inner" id="service"
+      initial={{ scale: 0.8, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 1.5 }}>
         <div className="container">
-          <div className="section-head style-3 text-center mb-4">
-            <h2 className="title">Our Speciallization <br/></h2>
+          <motion.div className="section-head style-3 text-center mb-4"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          >
+            <motion.h2 className="title"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            >Our Speciallization <br/></motion.h2>
             <div className="dlab-separator style-2 bg-primary"></div>
-          </div>
+          </motion.div>
           <div className="row">
             <div
               className="col-lg-4 col-md-6 wow fadeInUp"
@@ -35,7 +46,11 @@ function Speciallization() {
                     <MdDesignServices className="flaticon-office"></MdDesignServices>
                   </span>
                 </div>
-                <div className="icon-content">
+                <motion.div className="icon-content"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1.5 }}
+                >
                   <h4 className="dlab-title m-b15 cap">Ui/Ux Design</h4>
                   <p className="m-b20">
                     Step into a world of captivating design and unforgettable
@@ -49,7 +64,7 @@ function Speciallization() {
                       Get Started
                     </a>
                   </Link>
-                </div>
+                </motion.div>
               </div>
             </div>
             <div
@@ -70,7 +85,11 @@ function Speciallization() {
                     <FaLaptopCode className="flaticon-coding"></FaLaptopCode>
                   </span>
                 </div>
-                <div className="icon-content">
+                <motion.div className="icon-content"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1.5 }}
+                >
                   <h4 className="dlab-title m-b15 cap">Web Development</h4>
                   <p className="m-b20">
                     Elevate your business with our expert web development
@@ -83,7 +102,7 @@ function Speciallization() {
                     Get Started
                     </a>
                   </Link>
-                </div>
+                </motion.div>
               </div>
             </div>
             <div
@@ -104,7 +123,10 @@ function Speciallization() {
                     <SlGraph className="flaticon-laptop"></SlGraph>
                   </span>
                 </div>
-                <div className="icon-content">
+                <motion.div className="icon-content"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1.5 }}>
                   <h4 className="dlab-title m-b15 cap">
                     Advertisement Service
                   </h4>
@@ -120,13 +142,13 @@ function Speciallization() {
                     Get Started
                     </a>
                   </Link>
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
           {/* <TestimonialSlider4/> */}
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }

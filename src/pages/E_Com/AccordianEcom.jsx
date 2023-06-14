@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 
 function AccordionEcom() {
@@ -63,10 +64,13 @@ function AccordionEcom() {
     ];
   return (
     <>
-      <div
+      <motion.div
                 className="dlab-accordion accordion-sm"
                 id="accordionFaq"
                 defaultActiveKey="0"
+                initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}
             >
                 {defaultAccordion.map((d, i) => (
                     <div className="card" key={i}>
@@ -111,7 +115,7 @@ function AccordionEcom() {
                         </div>
                     </div>
                 ))}
-            </div>
+            </motion.div>
     </>
   )
 }

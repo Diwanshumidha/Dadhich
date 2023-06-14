@@ -3,6 +3,7 @@ import React from "react";
 import s from "../Coupon/css/CouponFeatures.module.css";
 import img_logo from "/public/svg/svgexport-12.svg";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const userfeatures = [
   {
@@ -218,8 +219,16 @@ const DatingFeatures = () => {
   return (
     <section className={s.section}>
       <div className={`${s.container} container`}>
-        <h2>Top Features</h2>
-        <div className={`radio_inputs ${s.toggle}`}>
+        <motion.h2
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        >Top Features</motion.h2>
+        <motion.div className={`radio_inputs ${s.toggle}`}
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        >
           <label className="radio" htmlFor="rad1">
             <input
               type="radio"
@@ -240,7 +249,7 @@ const DatingFeatures = () => {
             />
             <span className="name">Admin</span>
           </label>
-        </div>
+        </motion.div>
 
         <div className={s.card_container}>
           {checked === "user"
@@ -271,13 +280,17 @@ const DatingFeatures = () => {
 
 const Card = ({ name, ids, img_logo: image_link }) => {
   return (
-    <div className={`${s.card} ${ids}`} id={ids}>
+    <motion.div className={`${s.card} ${ids}`} id={ids}
+    initial={{ scale: 0.5, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}
+    >
       {/* <Image src={img_logo} width={60} height={60}></Image> */}
       {console.log(image_link)}
       <img src={image_link} width={60} height={60} alt="Image logo" />
 
       <h4>{name}</h4>
-    </div>
+    </motion.div>
   );
 };
 

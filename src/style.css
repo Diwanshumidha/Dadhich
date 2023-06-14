@@ -619,6 +619,16 @@ pre code {
     max-width: 540px;
   }
 }
+@media (max-width: 576px) {
+  .rizwan {
+    margin-top: -5rem;
+  }
+}
+@media (max-width: 576px) {
+  .features {
+    text-align: center;
+  }
+}
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
@@ -17973,6 +17983,11 @@ button.scroltop {
     background-size: cover;
   }
 }
+@media only screen and (min-width: 1921px) {
+  .new {
+    padding-top: 5rem;
+  }
+}
 @media only screen and (max-width: 1400px) {
   .banner-three .banner-inner .dz-media {
     margin-right: 0;
@@ -18014,7 +18029,7 @@ button.scroltop {
     margin-bottom: 50px;
   }
   .banner-three .banner-inner {
-    padding-top: 90px;
+    padding-top: 180px;
   }
 }
 
@@ -20777,6 +20792,11 @@ icon-bx-wraper style-4:hover .icon-cell i,
     font-size: 42px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .yes{
+    font-size: 42px;
+  }
+}
 
 .breadcrumb-row ul {
   background: transparent;
@@ -20833,7 +20853,7 @@ icon-bx-wraper style-4:hover .icon-cell i,
 }
 .dlab-bnr-inr.style-1 .dlab-bnr-inr-entry h1 {
   margin-bottom: 20px;
-  font-size: 60px;
+  font-size: 45px;
   line-height: 75px;
 }
 @media only screen and (max-width: 575px) {
@@ -20842,6 +20862,11 @@ icon-bx-wraper style-4:hover .icon-cell i,
   }
   .dlab-bnr-inr.style-1 .dlab-bnr-inr-entry {
     height: 300px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .yes{
+    font-size: 35px;
   }
 }
 .dlab-bnr-inr.style-2 {
@@ -21241,6 +21266,7 @@ footer .widget_getintuch ul li i {
 .contact_dlab {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .button_container {
@@ -21531,3 +21557,7 @@ footer .widget_getintuch ul li i {
   height: 85px;
   /* background-color: blue !important; */
 }
+
+
+
+/* Animation css for the Header */

@@ -8,6 +8,8 @@ import EUserFeature from './EcomUserFeatures'
 import FaqEcom from "./FaqEcom";
 import GetInTouch from "../GetInTouch";
 import EComPortfolio from "./EComPortfolio";
+import Portfolio from "../../components/D_Portfolio/D_Portfolio";
+import Development from "../../components/Coupon/Development";
 
 const E_Com = () => {
   return (
@@ -67,7 +69,7 @@ const E_Com = () => {
 
           
           <div className="container">
-            <div className="banner-inner">
+            <div className="banner-inner new">
               <div className="row align-items-center">
                 <div className="col-md-6">
                   <div className="banner-content text-white">
@@ -152,9 +154,11 @@ const E_Com = () => {
       </div>
       <OurFeatures />
 
-      <EComPortfolio hidden={true} category='ecom'/>
+      {/* <EComPortfolio hidden={true} category='ecom'/> */}
+      <Portfolio/>
       {/* <EUserFeature hidden={true} category='ecom'/> */}
-      <Process/>
+      {/* <Process/> */}
+      <Development/>
       <EUserFeature/>
       <FaqEcom/>
       <GetInTouch/>
