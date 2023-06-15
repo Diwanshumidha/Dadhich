@@ -7,9 +7,11 @@ import OurAgency from "../../components/AboutUs/AboutUs-3";
 import D_Portfolio from "../../components/D_Portfolio/D_Portfolio";
 import Newsletter from "../Newsletter/Newsletter-3";
 import Testimonial3 from "../../components/AboutTestimonials/Testimonial-3";
+import PopupForm from "../PopupForm";
 function Index3() {
   return (
     <>
+    <PopupForm/>
       <div className="home">
         <Header />
         <div className="page-content" id="top">

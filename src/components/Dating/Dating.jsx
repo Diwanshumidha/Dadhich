@@ -11,6 +11,8 @@ import DatingFeatures from "./DatingFEatures";
 import DatingFAQ from "./DatingFAQ";
 import FeaturesDuplicate from "./FeaturesDuplicate";
 import Process from "../Process/Process";
+import CouponPortfolio from "../Coupon/CouponPortfolio";
+import { motion } from "framer-motion";
 
 const Dating = () => {
   return (
@@ -19,87 +21,114 @@ const Dating = () => {
         <Header />
 
         <div className="container">
-          <div className="banner-inner">
+          <div className="banner-inner rizwan">
             <div
               className="row align-items-center"
               style={{
                 paddingTop: "10rem",
               }}
             >
-              <div className="col-md-6">
-                <div className="banner-content text-white">
-                  <h6
+              <motion.div className="col-md-6"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 1.5 }}>
+                <div className="banner-content text-white"
+                >
+                  <motion.h6
                     data-wow-delay="0.5s"
                     data-wow-duration="3s"
-                    className="wow fadeInUp sub-title text-yellow"
+                    className="wow fadeInUp sub-title text-yellow "
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 1.5 }}
                   >
-                    BEST DATING MATRIMONIAL WEBSITE DEVELOPMENT
-                  </h6>
+                    TOP RATED DATING MATRIMONIAL WEBSITE DEVELOPMENT
+                  </motion.h6>
                   <br />
                   <br />
 
-                  <h1
+                  <motion.h1
                     data-wow-delay="1s"
                     data-wow-duration="3s"
                     className="wow fadeInUp m-b20"
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 1.5 }}
                     style={{
                       fontSize: "3rem",
                       paddingTop: "2rem",
                       color: "white",
                     }}
                   >
-                    Designing the Future of Love: Dating & Matrimonial Website
-                  </h1>
-                  <p
+                    Designing the Future of Love: Matrimonial & Dating Website
+                  </motion.h1>
+                  <motion.p
                     data-wow-delay="1.5s"
                     data-wow-duration="3s"
                     className="wow fadeInUp m-b30"
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 1.5 }}
                   >
                     Create your own dating website similar to Match.com, OkCupid
                     or eHarmony.
-                  </p>
-                  <div className="button_container">
+                  </motion.p>
+                  <div className="button_container"
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 1.5 }}
+                  >
                     <Link to="/GetInTouch">
-                      <a
+                      <motion.a
                         data-wow-delay="2s"
                         data-wow-duration="3s"
                         className="wow fadeInUp  btn btn-corner gradient btn-primary"
+                        initial={{ scale: 0.8, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 1.5 }}
                       >
                         HIRE US
-                      </a>
+                      </motion.a>
                     </Link>
-                   
+
                     <Link to="https://wa.me/+918696219723">
-                      <a
+                      <motion.a
                         data-wow-delay="2s"
                         data-wow-duration="3s"
                         className="wow fadeInUp business_btn business_btn--outline  btn btn-corner gradient btn-primary"
+                        initial={{ scale: 0.8, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 1.5 }}
                       >
                         <div className="fa fa-whatsapp"></div>
                         WHATSAPP
-                      </a>
+                      </motion.a>
                     </Link>
                   </div>
                 </div>
-              </div>
+              </motion.div>
               <div className="col-md-6">
-                <div
+                <motion.div
                   className="dz-media wow fadeIn"
                   data-wow-delay="1s"
                   data-wow-duration="3s"
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 1.5 }}
                 >
                   <img
                     src="images/main-slider/slider3/pic1.png"
                     className="move-1"
                     alt=""
                   />
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <DuplicatePort />
+      {/* <DuplicatePort /> */}
+      <CouponPortfolio />
       <Development />
       <DatingFeatures />
 

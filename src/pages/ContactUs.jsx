@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import GetInTouch from "./GetInTouch";
 import Footer from "../components/Footer/Footer";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 
 function ContactUs() {
@@ -19,10 +20,21 @@ function ContactUs() {
             backgroundSize: "cover, 200%",
           }}
         >
-          <div className="container">
+          <motion.div className="container"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1.5 }}>
             <div className="dlab-bnr-inr-entry">
-              <h1>Contact Us</h1>
-              <nav aria-label="breadcrumb" className="breadcrumb-row style-1">
+              <motion.h1
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 1.5 }}
+              >Contact Us</motion.h1>
+              <motion.nav aria-label="breadcrumb" className="breadcrumb-row style-1"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 1.5 }}
+              >
                 <ul className="breadcrumb">
                   <li className="breadcrumb-item">
                     <Link to="/">
@@ -30,10 +42,10 @@ function ContactUs() {
                     </Link>
                   </li>
                 </ul>
-              </nav>
+              </motion.nav>
               {/* <!-- Breadcrumb Row End --> */}
             </div>
-          </div>
+          </motion.div>
         </div>
         <GetInTouch/>
       </div>

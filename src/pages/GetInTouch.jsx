@@ -1,19 +1,29 @@
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { BsSkype } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 function GetInTouch() {
     return (
         <>
             {/* <!-- Contact Form --> */}
             <section className="content-inner" id="contact">
-                <div className="container">
+                <motion.div className="container"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1.5 }}>
                     <div className="row align-items-center">
-                        <div className="col-lg-6 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
+                        <motion.div className="col-lg-6 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s"
+                        initial={{ scale: 0.8, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 2 }}>
                             <div className="dlab-media">
                                 <img src="images/about/img8.png" className="move-1" alt="" />
                             </div>
-                        </div>
-                        <div className="col-lg-6 m-b30 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.4s">
+                        </motion.div>
+                        <motion.div className="col-lg-6 m-b30 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.4s"
+                        initial={{ scale: 0.8, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 1.5 }}>
                             <form className="dlab-form style-1 dzForm" method="POST" action="script/contact.php">
                                 <div className="section-head style-3">
                                     <h2 className="title m-t10">Get In Touch With Us<br/></h2>
@@ -32,7 +42,11 @@ function GetInTouch() {
                                 <div className="dzFormMsg"></div>
                                 <input type="hidden" className="form-control" name="dzToDo" value="Contact" />
                                 <input type="hidden" className="form-control" name="reCaptchaEnable" value="0" />
-                                <div className="row">
+                                <motion.div className="row"
+                                initial={{ scale: 0.8, opacity: 0 }}
+                                animate={{ scale: 1, opacity: 1 }}
+                                transition={{ duration: 1.5 }}
+                                >
                                     <div className="col-sm-12">
                                         <div className="input-group">
                                             <input name="dzName" type="text" required className="form-control" placeholder="Full Name" />
@@ -88,11 +102,11 @@ function GetInTouch() {
                                     <div className="col-sm-12">
                                         <button type="submit" className="btn btn-corner gradient btn-block btn-primary">Submit Now</button>
                                     </div>
-                                </div>
+                                </motion.div>
                             </form>
-                        </div>
+                        </motion.div>
                     </div>
-                </div>
+                </motion.div>
             </section>
         </>
     )

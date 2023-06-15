@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
+import { motion } from "framer-motion";
 
 function TestimonialSlider3() {
   // const settings = {
@@ -34,7 +35,10 @@ function TestimonialSlider3() {
         data-wow-delay="0.6s"
       >
         <SwiperSlide className="item">
-          <div className="testimonial-2">
+          <motion.div className="testimonial-2"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1.5 }}>
             <div className="testimonial-pic ">
               <img src="images/testimonials/JoshuaSophy.jpeg" alt="" />
             </div>
@@ -50,10 +54,14 @@ function TestimonialSlider3() {
               </p>
               <strong className="testimonial-name white">Joshuasophy</strong>
             </div>
-          </div>
+          </motion.div>
         </SwiperSlide>
         <SwiperSlide className="item">
-          <div className="testimonial-2">
+          <motion.div className="testimonial-2"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          >
             <div className="testimonial-pic ">
               <img src="images/testimonials/FinCross.jpeg" alt="" />
             </div>
@@ -64,10 +72,14 @@ function TestimonialSlider3() {
               </p>
               <strong className="testimonial-name white">Fincross777</strong>
             </div>
-          </div>
+          </motion.div>
         </SwiperSlide>
         <SwiperSlide className="item">
-          <div className="testimonial-2">
+          <motion.div className="testimonial-2"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          >
             <div className="testimonial-pic ">
               <img src="images/testimonials/MichealMcFarland.jpeg" alt="" />
             </div>
@@ -81,10 +93,14 @@ function TestimonialSlider3() {
               </p>
               <strong className="testimonial-name white">Memberbiz</strong>
             </div>
-          </div>
+          </motion.div>
         </SwiperSlide>
         <SwiperSlide className="item">
-          <div className="testimonial-2">
+          <motion.div className="testimonial-2"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          >
             <div className="testimonial-pic ">
               <img src="images/testimonials/Kenyeben.jpeg" alt="" />
             </div>
@@ -97,7 +113,7 @@ function TestimonialSlider3() {
               </p>
               <strong className="testimonial-name white">Kenyeben</strong>
             </div>
-          </div>
+          </motion.div>
         </SwiperSlide>
       </Swiper>
     </>

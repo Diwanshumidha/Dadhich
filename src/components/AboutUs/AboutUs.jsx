@@ -11,6 +11,8 @@ import ClientSlider from "../ClientSlider/Clients-3";
 import Testimonial3 from "../AboutTestimonials/Testimonial-3";
 
 import AboutService from "../AboutService/Service";
+import { motion } from "framer-motion";
+import Newsletter3 from "../../pages/Newsletter/Newsletter-3";
 
 function AboutUs() {
   const [isOpen, setOpen] = useState(false);
@@ -27,9 +29,13 @@ function AboutUs() {
           }}
         >
           <div className="container">
-            <div className="dlab-bnr-inr-entry">
-              <h1>Dadhich Technologies</h1>
-            </div>
+            <motion.div className="dlab-bnr-inr-entry "
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            >
+              <h1 className="yes">Dadhich Technologies</h1>
+            </motion.div>
           </div>
         </div>
 
@@ -43,10 +49,18 @@ function AboutUs() {
         {/* <!-- Team --> */}
         <section className="content-inner-1 bg-gray">
           <div className="container">
-            <div className="section-head style-3 text-center">
-              <h2 className="title">Our Team Members</h2>
+            <motion.div className="section-head style-3 text-center"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            >
+              <motion.h2 className="title"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 1.5 }}
+              >Our Team Members</motion.h2>
               <div className="dlab-separator style-2 bg-primary"></div>
-            </div>
+            </motion.div>
             <div className="row my-3">
               <div className="col-lg-12">
                 {/* <TeamMembers /> */}
@@ -71,7 +85,7 @@ function AboutUs() {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="container">
+          {/* <div className="container">
             <div className="row align-items-center subscribe-wraper-1">
               <div className="col-lg-7 col-md-6" style={{marginBottom:'1rem'}}>
                 <h2 className="text-white title m-b30">
@@ -112,26 +126,39 @@ function AboutUs() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
+          <Newsletter3/>
         </section>
 
         {/* <!-- Testimonials --> */}
         {/* <BTestimonials /> */}
         <Testimonial3 />
         {/* <!-- Blog --> */}
-        <section className="content-inner">
+        <motion.section className="content-inner"
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        >
           <div className="container">
-            <div className="section-head style-3 text-center">
+            <motion.div className="section-head style-3 text-center"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            >
               <h2 className="title">Our Blog & News</h2>
               <div className="dlab-separator style-2 bg-primary"></div>
-            </div>
+            </motion.div>
             <div className="row">
-              <div
+              <motion.div
                 className="col-xl-6 wow fadeInUp"
                 data-wow-duration="2s"
                 data-wow-delay="0.2s"
+                initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}
               >
-                <div className="dlab-blog blog-half m-b30">
+                <div className="dlab-blog blog-half m-b30"
+                >
                   <div className="dlab-media">
                     <img src="images/blog/default/thum1.jpg" alt="" />
                   </div>
@@ -177,11 +204,14 @@ function AboutUs() {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
+              </motion.div>
+              <motion.div
                 className="col-xl-6 wow fadeInUp"
                 data-wow-duration="2s"
                 data-wow-delay="0.4s"
+                initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}
               >
                 <div className="dlab-blog blog-half m-b30">
                   <div className="dlab-media">
@@ -229,11 +259,14 @@ function AboutUs() {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
+              </motion.div>
+              <motion.div
                 className="col-xl-6 wow fadeInUp"
                 data-wow-duration="2s"
                 data-wow-delay="0.6s"
+                initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}
               >
                 <div className="dlab-blog blog-half m-b30">
                   <div className="dlab-media">
@@ -281,11 +314,14 @@ function AboutUs() {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
+              </motion.div>
+              <motion.div
                 className="col-xl-6 wow fadeInUp"
                 data-wow-duration="2s"
                 data-wow-delay="0.8s"
+                initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}
               >
                 <div className="dlab-blog blog-half m-b30">
                   <div className="dlab-media">
@@ -333,10 +369,10 @@ function AboutUs() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* <!-- Clients Logo --> */}
         <div className="p-tb50 bg-gray">

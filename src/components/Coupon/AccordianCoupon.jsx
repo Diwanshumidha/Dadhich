@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 
 
@@ -29,7 +30,7 @@ function AccordionCoupn() {
                 "A: Our agency offers comprehensive services including website design, development, user experience optimization, coupon integration, deal management systems, and ongoing maintenance and support.",
 
             bg: "success",
-            
+
         },
         {
             title: "Q: How long does it take to develop a coupon and deal website?",
@@ -80,17 +81,24 @@ function AccordionCoupn() {
 
             bg: "success",
         },
-        
+
     ];
-  return (
-    <>
-      <div
+    return (
+        <>
+            <motion.div
                 className="dlab-accordion accordion-sm"
                 id="accordionFaq"
                 defaultActiveKey="0"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1.5 }}
             >
                 {defaultAccordion.map((d, i) => (
-                    <div className="card" key={i}>
+                    <motion.div className="card" key={i}
+                        initial={{ scale: 0.8, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 1.5 }}
+                    >
                         <div
                             eventKey={`${i}`}
                             className="card-header"
@@ -99,10 +107,9 @@ function AccordionCoupn() {
                             }
                         >
                             <h5 className="dlab-title">
-                                <a 
-                                    className={`${
-                                        activeDefault === i ? "" : "collapsed"
-                                    }`}
+                                <a
+                                    className={`${activeDefault === i ? "" : "collapsed"
+                                        }`}
                                     onClick={() =>
                                         setActiveDefault(
                                             activeDefault === i ? -1 : i
@@ -119,22 +126,21 @@ function AccordionCoupn() {
                                 <p className="m-b0">{d.text}</p>
                             </div>
                         </div> */}
-                        <div className={`${
-                                        activeDefault === i ? "collapsed show" : "collapsed"
-                                    }`} eventKey={`${i}`} onClick={() =>
-                                        setActiveDefault(
-                                            activeDefault === i ? -1 : i
-                                        )
-                                    }>
+                        <div className={`${activeDefault === i ? "collapsed show" : "collapsed"
+                            }`} eventKey={`${i}`} onClick={() =>
+                                setActiveDefault(
+                                    activeDefault === i ? -1 : i
+                                )
+                            }>
                             <div className="card-body">
                                 <p className="m-b0">{d.text}</p>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
-            </div>
-    </>
-  )
+            </motion.div>
+        </>
+    )
 }
 
 export default AccordionCoupn;

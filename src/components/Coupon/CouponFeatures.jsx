@@ -3,6 +3,7 @@ import React from "react";
 import s from "../Coupon/css/CouponFeatures.module.css";
 // import img_logo from "../../../public/svg/svgexport-12.svg";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 import { addtocart,alert,browser,calculator,cashback,compare,coupon,daily,deal,email,excusive,expired,feature,language,location,offer,optimization,personalization,printer,profile,reviews,search,share,socialmedia,store,update,vote,vaucher } from "./Features/User";
 import { addvertise,affiliat,analytics,approved,calender,cashless,category,communication,creater,feedback,help,lifestyle,management,newsletter,performance,restore,secure,seo,ui } from "./Features/User";
@@ -256,10 +257,22 @@ const CouponFeatures = () => {
   // console.log(dispayedadmin);
 
   return (
-    <section className={s.section}>
+    <motion.section className={s.section}
+    initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}
+    >
       <div className={`${s.container} container`}>
-        <h2>Top Features</h2>
-        <div className={`radio_inputs ${s.toggle}`}>
+        <motion.h2
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        >Top Features</motion.h2>
+        <motion.div className={`radio_inputs ${s.toggle}`}
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        >
           <label className="radio" htmlFor="rad1">
             <input type="radio" name="radio" id="rad1" checked={checked === 'user'} onChange={() => handleChange('user')}/>
             <span className="name" >User</span>
@@ -268,9 +281,13 @@ const CouponFeatures = () => {
             <input type="radio" name="radio" id="rad2" checked={checked === 'admin'} onChange={() => handleChange('admin')} />
             <span className="name" >Admin</span>
           </label>
-        </div>
+        </motion.div>
 
-        <div className={s.card_container}>
+        <motion.div className={s.card_container}
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        >
           {checked === 'user'
             ? dispayeduser.map((item ) => {
                 return (
@@ -288,10 +305,14 @@ const CouponFeatures = () => {
                   img_logo={item.link} 
                 />
               ))}
-        </div>
-        <button onClick={handleExpandClick}>{!expanded?'More Features':'Show Less'}</button>
+        </motion.div>
+        <motion.button onClick={handleExpandClick}
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        >{!expanded?'More Features':'Show Less'}</motion.button>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
