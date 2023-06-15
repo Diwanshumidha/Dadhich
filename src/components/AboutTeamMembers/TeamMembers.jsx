@@ -1,7 +1,3 @@
-
-
-
-
 import React from "react";
 import c from "./TeamMembers.module.css";
 import { Link } from "react-router-dom";
@@ -14,10 +10,11 @@ function TeamMembers() {
   return (
     <>
       <div className="responsive">
-        <motion.section className={c.laptop}
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 1.5 }}
+        <motion.section
+          className={c.laptop}
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1.5 }}
         >
           <Swiper
             spaceBetween={30}
@@ -39,7 +36,10 @@ function TeamMembers() {
             >
               <div className="dlab-team style-2 m-b10">
                 <div className="dlab-media">
-                  <img src="images/team/small/Rakesh1.jpeg" alt="Rakesh1.jpeg" />
+                  <img
+                    src="images/team/small/Rakesh1.jpeg"
+                    alt="Rakesh1.jpeg"
+                  />
                 </div>
                 <div className="dlab-content">
                   <div className="clearfix">
@@ -61,7 +61,10 @@ function TeamMembers() {
             >
               <div className="dlab-team style-2 m-b10">
                 <div className="dlab-media">
-                  <img src="images/team/small/Praveen1.jpeg" alt="Praveen1.jpeg" />
+                  <img
+                    src="images/team/small/Praveen1.jpeg"
+                    alt="Praveen1.jpeg"
+                  />
                 </div>
                 <div className="dlab-content">
                   <div className="clearfix">
@@ -82,14 +85,14 @@ function TeamMembers() {
             >
               <div className="dlab-team style-2 m-b10">
                 <div className="dlab-media">
-                  <img src="images/team/small/Bina.jpeg" alt="Bina Kunadiya" />
+                  <img src="images/team/small/Rizwan.jpg" alt=" Mohd Rizwan" />
                 </div>
                 <div className="dlab-content">
                   <div className="clearfix">
                     <h3 className="dlab-name">
                       <a href="/team-3">
                         {" "}
-                        Bina Kunadiya <br />
+                        Mohd Rizwan <br />
                       </a>
                     </h3>
                     <span className="dlab-position">Full Stack Developer</span>
@@ -104,7 +107,10 @@ function TeamMembers() {
             >
               <div className="dlab-team style-2 m-b10">
                 <div className="dlab-media">
-                  <img src="images/team/small/Diwanshu.jpeg" alt="Diwanshu.jpeg" />
+                  <img
+                    src="images/team/small/Diwanshu.jpeg"
+                    alt="Diwanshu.jpeg"
+                  />
                 </div>
                 <div className="dlab-content">
                   <div className="clearfix">
@@ -147,7 +153,10 @@ function TeamMembers() {
             >
               <div className="dlab-team style-2 m-b10">
                 <div className="dlab-media">
-                  <img src="images/team/small/Surjeet1.jpeg" alt="Surjeet1.jpeg" />
+                  <img
+                    src="images/team/small/Surjeet1.jpeg"
+                    alt="Surjeet1.jpeg"
+                  />
                 </div>
                 <div className="dlab-content">
                   <div className="clearfix">
@@ -165,10 +174,11 @@ function TeamMembers() {
           </Swiper>
         </motion.section>
 
-        <motion.section className={c.phone}
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 1.5 }}
+        <motion.section
+          className={c.phone}
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1.5 }}
         >
           <Swiper
             spaceBetween={30}
@@ -188,23 +198,28 @@ function TeamMembers() {
               data-wow-duration="2s"
               data-wow-delay="0.1s"
             >
-              <motion.div className="dlab-team style-2 m-b10"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 1.5 }}
+              <motion.div
+                className="dlab-team style-2 m-b10"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1.5 }}
               >
                 <div className="dlab-media">
-                  <img src="images/team/small/Rakesh1.jpeg" alt="Rakesh1.jpeg" />
+                  <img
+                    src="images/team/small/Rakesh1.jpeg"
+                    alt="Rakesh1.jpeg"
+                  />
                 </div>
                 <div className="dlab-content">
-                  <div className="clearfix"
-                  >
+                  <div className="clearfix">
                     <h3 className="dlab-name">
                       <a className="done" href="/team-3">
                         Rakesh Dadhich <br />
                       </a>
                     </h3>
-                    <span id="working" className="dlab-position">Director</span>
+                    <span id="working" className="dlab-position">
+                      Director
+                    </span>
                   </div>
                 </div>
               </motion.div>
@@ -215,23 +230,28 @@ function TeamMembers() {
               data-wow-duration="2s"
               data-wow-delay="0.2s"
             >
-              <motion.div className="dlab-team style-2 m-b10"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 1.5 }}
+              <motion.div
+                className="dlab-team style-2 m-b10"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1.5 }}
               >
                 <div className="dlab-media">
-                  <img src="images/team/small/Praveen1.jpeg" alt="Praveen1.jpeg" />
+                  <img
+                    src="images/team/small/Praveen1.jpeg"
+                    alt="Praveen1.jpeg"
+                  />
                 </div>
                 <div className="dlab-content">
-                  <div className="clearfix"
-                  >
+                  <div className="clearfix">
                     <h3 className="dlab-name">
                       <a className="done" href="/team-3">
                         Praveen Dadhich <br />
                       </a>
                     </h3>
-                    <span id="working" className="dlab-position">Director</span>
+                    <span id="working" className="dlab-position">
+                      Director
+                    </span>
                   </div>
                 </div>
               </motion.div>
@@ -241,10 +261,11 @@ function TeamMembers() {
               data-wow-duration="2s"
               data-wow-delay="0.3s"
             >
-              <motion.div className="dlab-team style-2 m-b10"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 1.5 }}
+              <motion.div
+                className="dlab-team style-2 m-b10"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1.5 }}
               >
                 <div className="dlab-media">
                   <img src="images/team/small/Bina.jpeg" alt="Bina Kunadiya" />
@@ -257,7 +278,9 @@ function TeamMembers() {
                         Bina Kunadiya <br />
                       </a>
                     </h3>
-                    <span id="working" className="dlab-position">Full Stack Developer</span>
+                    <span id="working" className="dlab-position">
+                      Full Stack Developer
+                    </span>
                   </iv>
                 </div>
               </motion.div>
@@ -267,13 +290,17 @@ function TeamMembers() {
               data-wow-duration="2s"
               data-wow-delay="0.4s"
             >
-              <motion.div className="dlab-team style-2 m-b10"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 1.5 }}
+              <motion.div
+                className="dlab-team style-2 m-b10"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1.5 }}
               >
                 <div className="dlab-media">
-                  <img src="images/team/small/Diwanshu.jpeg" alt="Diwanshu.jpeg" />
+                  <img
+                    src="images/team/small/Diwanshu.jpeg"
+                    alt="Diwanshu.jpeg"
+                  />
                 </div>
                 <div className="dlab-content">
                   <div className="clearfix">
@@ -283,7 +310,9 @@ function TeamMembers() {
                         Diwanshu Midha <br />
                       </a>
                     </h3>
-                    <span id="working" className="dlab-position">Full Stack Developer</span>
+                    <span id="working" className="dlab-position">
+                      Full Stack Developer
+                    </span>
                   </div>
                 </div>
               </motion.div>
@@ -293,10 +322,11 @@ function TeamMembers() {
               data-wow-duration="2s"
               data-wow-delay="0.5s"
             >
-              <motion.div className="dlab-team style-2 m-b10"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 1.5 }}
+              <motion.div
+                className="dlab-team style-2 m-b10"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1.5 }}
               >
                 <div className="dlab-media">
                   <img src="images/team/small/Sartaj.jpg" alt="Sartaj.jpg" />
@@ -308,7 +338,9 @@ function TeamMembers() {
                         Sartaj Saifi <br />
                       </a>
                     </h3>
-                    <span id="working" className="dlab-position">Full Stack Developer</span>
+                    <span id="working" className="dlab-position">
+                      Full Stack Developer
+                    </span>
                   </div>
                 </div>
               </motion.div>
@@ -318,13 +350,17 @@ function TeamMembers() {
               data-wow-duration="2s"
               data-wow-delay="0.6s"
             >
-              <motion.div className="dlab-team style-2 m-b10"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 1.5 }}
+              <motion.div
+                className="dlab-team style-2 m-b10"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1.5 }}
               >
                 <div className="dlab-media">
-                  <img src="images/team/small/Surjeet1.jpeg" alt="Surjeet1.jpeg" />
+                  <img
+                    src="images/team/small/Surjeet1.jpeg"
+                    alt="Surjeet1.jpeg"
+                  />
                 </div>
                 <div className="dlab-content">
                   <div className="clearfix">
@@ -334,7 +370,9 @@ function TeamMembers() {
                         Surjeet Chaudhary <br />{" "}
                       </a>
                     </h3>
-                    <span id="working" className="dlab-position">WordPress Developer</span>
+                    <span id="working" className="dlab-position">
+                      WordPress Developer
+                    </span>
                   </div>
                 </div>
               </motion.div>
