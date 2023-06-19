@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import s from "./d_portfolio.module.css";
 import Card from "./Card";
-import axios from "axios";
-import Header from "../Header/Header";
 import { motion } from "framer-motion";
+import { client } from "../../../sanityclient";
 
 
 const Portfolio = ({ hidden, category }) => {
@@ -13,11 +12,10 @@ const Portfolio = ({ hidden, category }) => {
 
   const getPortfolio = async () => {
     try {
-      const response = await axios.get(
-        "https://dadvichserver.onrender.com/portfolio/getportfolio"
-      );
-      setPortfolio(response.data);
-      console.log("GetPortfolio=>", response.data);
+      const query = "*[_type == 'Portfolio']"
+      const response = await client.fetch(query)
+      setPortfolio(response);
+      console.log("GetPortfolio=>", response);
     } catch (error) {
       console.log(error.message);
     }
@@ -25,11 +23,10 @@ const Portfolio = ({ hidden, category }) => {
 
   const getCategories = async () => {
     try {
-      const response = await axios.get(
-        "https://dadvichserver.onrender.com/portfolio/getcategories"
-      );
-      setCategories(response.data);
-      console.log("GetCategories=>", response.data);
+      const query = "*[_type == 'Category']"
+      const response = await client.fetch(query)
+      setCategories(response);
+      console.log("GetCategories=>", response);
     } catch (error) {
       console.log(error.message);
     }
@@ -64,10 +61,10 @@ const Portfolio = ({ hidden, category }) => {
                 <button
                   key={name.category}
                   onClick={() => {
-                    setCurrentCategory(name.category.toLowerCase());
+                    setCurrentCategory(name.name.toLowerCase());
                   }}
                 >
-                  {name.category}
+                  {name.name}
                 </button>
               ))}
             </motion.div>
@@ -82,17 +79,12 @@ const Portfolio = ({ hidden, category }) => {
           >
             <div className={`${s.card_container}`}>
               {portfolio
-                .filter((item) =>
-                  currentCategory === "all product" || item.category.toLowerCase() === currentCategory.toLowerCase()
-
-                )
                 .slice(0, 9)
                 .map((item) => (
                   <Card
                     key={item.title}
                     title={item.title}
                     link={item.link}
-                    category={item.category}
                     image={item.image}
                   ></Card>
                 ))

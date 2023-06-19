@@ -8,19 +8,7 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import D_Portfolio from '../../components/D_Portfolio/D_Portfolio'
 
-const buttons = [
-  "All Product",
-  "Wordpress",
-  "Html",
-  "Dashboard",
-  "React",
-  "Laravel",
-  "Angular",
-  "Mobile App",
-  "All Product",
-  "Wordpress",
-  "Html"
-];
+
 
 const Portfolio = ( ) => {
   return (
@@ -41,7 +29,7 @@ const Portfolio = ( ) => {
           </div>
         </div>
       </div>
-      <D_Portfolio category="all product" hidden={false}/>
+      <D_Portfolio category={"all product"} hidden={false}/>
       <Footer />
     </>
   );

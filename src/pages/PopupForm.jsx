@@ -1,14 +1,13 @@
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { BsSkype } from "react-icons/bs";
 
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogActions from '@material-ui/core/DialogActions';
-import TextField from '@material-ui/core/TextField';
 import { motion } from 'framer-motion';
 import p from './Portfolio/Portfolio.module.css'
 import { Close } from '@material-ui/icons';
@@ -49,8 +48,8 @@ const PopupForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Perform form submission logic here
-    // ...
+    
+    
 
     handleClose();
   };

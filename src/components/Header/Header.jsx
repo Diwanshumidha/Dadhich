@@ -93,7 +93,7 @@ function Header() {
                       </li> */}
                       <li>
                       
-                        <Link to="/Ecom">
+                        <Link to="/ecom">
                           
                           <a>E-commerce Website</a>
                         </Link>
