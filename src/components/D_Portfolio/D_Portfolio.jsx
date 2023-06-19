@@ -12,7 +12,13 @@ const Portfolio = ({ hidden, category }) => {
 
   const getPortfolio = async () => {
     try {
-      const query = "*[_type == 'Portfolio']"
+      const query = `*[_type == 'Portfolio']{
+        title,
+        type,
+        _id,
+        Link,
+        "image":image.asset->url
+      }`
       const response = await client.fetch(query)
       setPortfolio(response);
       console.log("GetPortfolio=>", response);
@@ -78,13 +84,14 @@ const Portfolio = ({ hidden, category }) => {
           transition={{ duration: 1.5 }}
           >
             <div className={`${s.card_container}`}>
+              
               {portfolio
                 .slice(0, 9)
                 .map((item) => (
                   <Card
                     key={item.title}
                     title={item.title}
-                    link={item.link}
+                    Link={item.Link}
                     image={item.image}
                   ></Card>
                 ))

@@ -1,24 +1,8 @@
 // import Link from "next/link";
 import emailjs from 'emailjs-com';
 import { Link } from "react-router-dom";
-function GetInTouch3() {
-
-  emailjs.init('XTxFCKzsCuNFAGr-c');
-  function sendEmail(e) {
-      e.preventDefault();    
-      emailjs.send("service_912yeux","template_n5xtppd",{
-          from_name: "from_name",
-          to_name: "Raj Singh",
-          message: "Hey I got your mail ",
-          })
-          .then((result) => {
-              window.location.reload() 
-              console.log(result.text); 
-              alert("done")
-          }, (error) => {
-              console.log(error.text);
-          });   
-  }
+function GetInTouch3() {  
+    
 
   return (
     <>
