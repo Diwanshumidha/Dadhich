@@ -54,7 +54,7 @@ function Header() {
                   <Link to="/ContactUs">
                     <a className="btn btn-corner gradient btn-primary">
                       <div className="fa fa-angle-right m-r10"></div>
-                     <b>Get A Quote</b> 
+                     <b style={{color:'white'}}>Get A Quote</b> 
                     </a>
                   </Link>
                 </div>

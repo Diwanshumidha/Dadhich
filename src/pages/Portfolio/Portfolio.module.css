@@ -34,8 +34,9 @@
     margin-bottom: -10px;
 }
 .div{
-    width: 400px;
-    height: 30%;
+    z-index: 1000000000;
+    width: 350px;
+    min-height: 30%;
 }
 
 @media only screen and (max-width: 575px) {

@@ -3,22 +3,45 @@ import emailjs from 'emailjs-com';
 import { Link } from "react-router-dom";
 function GetInTouch3() {
   
-  emailjs.init('XTxFCKzsCuNFAGr-c');
-  function sendEmail(e) {
-      e.preventDefault();    
-      emailjs.send("service_912yeux","template_n5xtppd",{
-          from_name: "from_name",
-          to_name: "Raj Singh",
-          message: "Hey I got your mail ",
-          })
-          .then((result) => {
-              window.location.reload() 
-              console.log(result.text); 
-              alert("done")
-          }, (error) => {
-              console.log(error.text);
-          });   
+  const [formData, setFormData] = useState({
+    dzName: "",
+    dzEmail: "",
+    countrycode: "",
+    dzOtherPhone: "",
+    dzOtherProjectTitle: "",
+    lookingFor: ""
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    sendEmail();
+  };
+
+  function sendEmail() {
+    emailjs.init('XTxFCKzsCuNFAGr-c');
+    emailjs
+      .send("service_912yeux", "template_n5xtppd", {
+        from_name: formData.dzName,
+        to_name: "Raj Singh",
+        message: formData.
+      })
+      .then((result) => {
+        window.location.reload();
+        console.log(result.text);
+        alert("done");
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
   }
+
   return (
     <>
       {/* <!-- Contact Form --> */}
@@ -127,7 +150,7 @@ function GetInTouch3() {
                       }}
                     >
                       <input
-                        name="dzOther[phone]"
+                        name="dzphone"
                         type="text"
                         required=""
                         class="form-control phno"
@@ -141,7 +164,7 @@ function GetInTouch3() {
                   <div className="col-sm-12">
                     <div className="input-group">
                       <input
-                        name="dzOther[project_title]"
+                        name="dztitle"
                         type="text"
                         required
                         className="form-control"
@@ -152,6 +175,7 @@ function GetInTouch3() {
                   <div className="col-sm-12">
                     <div className="input-group">
                       <select
+                        name='dzlookingfor'
                         className="form-select form-control"
                         aria-label="Default select example"
                       >
@@ -173,6 +197,7 @@ function GetInTouch3() {
                   <div className="col-sm-12">
                     <div className="input-group">
                       <textarea
+                        name='message'
                         className="form-control"
                         required
                         placeholder="Explain Requirements"
@@ -182,6 +207,7 @@ function GetInTouch3() {
                   <div className="col-sm-12">
                     <button
                       type="submit"
+                      
                       className="btn btn-corner gradient btn-block btn-primary"
                     >
                       Submit Now

@@ -12,6 +12,7 @@ import { motion } from 'framer-motion';
 import p from './Portfolio/Portfolio.module.css'
 import { Close } from '@material-ui/icons';
 import { IconButton } from '@mui/material';
+import { sendEmail, sendToDatabase } from './Contact'
 
 const useStyles = makeStyles((theme) => ({
   formContainer: {
@@ -48,22 +49,23 @@ const PopupForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    
-
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+    sendToDatabase(data)
+    sendEmail(data);
     handleClose();
   };
 
 
   return (
-    <div className={p.div}>
+    <div className={p.div} >
       <Dialog open={open} onClose={handleClose}>
-        <DialogTitle className={p.dialog}><h2> Let's Talk</h2>
+        <DialogTitle style={{width:'94%'}} className={p.dialog}><h2> Let's Talk</h2>
           <IconButton className={p.closeButton} onClick={handleClose}>
             <Close />
           </IconButton>
           <div className={`${p.us}.dlab-social-icon contact_dlab`}>
-            <h5 id={p.header} >Reach Us On -</h5>
+            <h5 id={p.header} style={{fontSize:'16px',margin:'0' }} >Reach Us On -</h5>
             <a id={p.head} className="fa fa-whatsapp con_whatsapp" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} href="https://wa.me/+918696219723">
               <AiOutlineWhatsApp />
             </a>
@@ -74,7 +76,7 @@ const PopupForm = () => {
           </div>
         </DialogTitle>
         <DialogContent>
-          <form className={p.formContainer} onSubmit={handleSubmit} method="POST" action="script/contact.php">
+          <form className={p.formContainer} onSubmit={handleSubmit} method="POST" action="">
             {/* <TextField label="Name" variant="outlined" required />
             <TextField label="Email" variant="outlined" required />
             <TextField label="Message" variant="outlined" multiline rows={4} required /> */}
@@ -111,19 +113,14 @@ const PopupForm = () => {
               </div>
               <div className="col-sm-12">
                 <div className="input-group">
-                  <input name="dzOther[project_title]" type="text" required className="form-control" placeholder="Project Title" />
-                </div>
-              </div>
-              <div className="col-sm-12">
-                <div className="input-group">
                   <textarea className="form-control" required placeholder="Explain Requirements"></textarea>
                 </div>
               </div>
 
             </motion.div>
             <DialogActions>
-              <Button type="submit" className={`${p.button2} btn btn-block btn-corner gradient  btn-primary" color="primary`}>
-                Submit
+              <Button type="submit" style={{color:'white',transition:'0.4s'}} className={`${p.button2} btn btn-block btn-corner gradient  btn-primary" color="primary`}>
+                Let's talk
               </Button>
             </DialogActions>
           </form>
